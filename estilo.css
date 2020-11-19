@@ -1,2 +1,26 @@
-body {margin:10px;}
-ul {list-style: none;}
+body {
+    background-color: rgb(197, 255, 197);
+    color: rgb(66, 66, 66);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+img {
+    border-radius: 25px;
+}
+ul {
+    list-style: none;
+}
+.highSkill {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.Montserrat {
+    font-family: 'Oswald', sans-serif;
+}
+.title-orange {
+    color: coral;
+}
+#habilidades {
+    text-align: right;
+}
