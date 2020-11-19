@@ -1,2 +1,13 @@
-body {margin:10px;}
+body {
+    background-color: #f2e3e5;
+    font-family: 'Montserrat', sans-serif;
+    margin:10px;
+    text-align: center;
+}
 ul {list-style: none;}
+.Montserrat {
+    font-family: 'Oswald', sans-serif;
+}
+#habilidades {
+    text-align: right;
+}
