@@ -16,12 +16,13 @@ header {
   padding: 1em 35px;
 }
 
-header .main-picture .description{
+.description{
   margin: 2em 2em;
   max-width: 1000px;
+  min-width: 500px;
 }
 
-img .main-picture {
+.main-picture img {
   background: linear-gradient(to right, rgb(192, 92, 192), rgb(92, 92, 192));
   border-radius: 200px;
   padding: 0.5em;
@@ -30,18 +31,19 @@ img .main-picture {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .description {
-  margin: 2em 0;
-  text-align: center;
+  margin: auto;
+  padding: 3em 0;
 }
 
 li {
   padding: 8px 0;
 }
 
-.title-orange ul li:nth-child(odd) {
+.skills li:nth-child(odd) {
   font-weight: bold;
 }
 
@@ -70,7 +72,7 @@ li {
   margin: 4em 35px 12px 35px;
 }
 
-#footer {
+.footer {
   background-image: url('recife_skyline_1_BW.svg');
   background-position: 1% 25%;
   background-size: cover;
@@ -78,10 +80,10 @@ li {
   padding: 6em 0;
 }
 
-#footer a:link, #footer a:visited {
+.footer a:link, .footer a:visited {
   color: lightblue;
 }
 
-#skills {
+.skills {
   clear: both;
 }
