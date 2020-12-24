@@ -16,17 +16,12 @@ header {
   padding: 1em 35px;
 }
 
-.description{
-  margin: 2em 2em;
-  max-width: 1000px;
-  min-width: 500px;
+iframe {
+  display: block;
 }
 
-.main-picture img {
-  background: linear-gradient(to right, rgb(192, 92, 192), rgb(92, 92, 192));
-  border-radius: 200px;
-  padding: 0.5em;
-  width: 200px;
+li {
+  padding: 8px 0;
 }
 
 ul {
@@ -37,27 +32,41 @@ ul {
 .description {
   margin: auto;
   padding: 3em 0;
+  max-width: 1000px;
+  min-width: 500px;
 }
 
-li {
-  padding: 8px 0;
+.footer {
+  background-image: url('recife_skyline_1_BW.svg');
+  background-position: 0% 0%;
+  background-size: cover;
+  color: ghostwhite;
+  padding: 6em 0;
 }
 
-.skills li:nth-child(odd) {
-  font-weight: bold;
+.footer a:link, .footer a:visited {
+  color: lightblue;
+  font-weight: 800;
 }
 
-.main-picture{
+.main-picture {
   float: left;
   margin: 2em 12px;
+}
+
+.main-picture img {
+  background: linear-gradient(to right, rgb(192, 92, 192), rgb(92, 92, 192));
+  border-radius: 200px;
+  padding: 0.5em;
+  width: 200px;
 }
 
 .Montserrat {
   font-family: 'Oswald', sans-serif;
 }
 
-.projects {
-  display: flexbox;
+.skills li:nth-child(odd) {
+  font-weight: bold;
 }
 
 .projects img {
@@ -67,23 +76,11 @@ li {
   width: 200px;
 }
 
+.skills {
+  clear: both;
+}
+
 .title-orange {
   color: indianred;
   margin: 4em 35px 12px 35px;
-}
-
-.footer {
-  background-image: url('recife_skyline_1_BW.svg');
-  background-position: 1% 25%;
-  background-size: cover;
-  color: ghostwhite;
-  padding: 6em 0;
-}
-
-.footer a:link, .footer a:visited {
-  color: lightblue;
-}
-
-.skills {
-  clear: both;
 }
