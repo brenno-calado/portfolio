@@ -5,7 +5,7 @@
 body {
   background-color: rgb(197 , 255 , 197);
   color: rgb(66 , 66 , 66);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', 'Ubuntu', sans-serif;
   font-size: 16px;
   text-align: center;
 }
@@ -55,14 +55,10 @@ ul {
 }
 
 .main-picture img {
-  background: linear-gradient(to right, rgb(192, 92, 192), rgb(92, 92, 192));
+  background: linear-gradient(to right, rgb(56, 132, 207), rgb(183, 132, 178), rgb(251, 193, 2));
   border-radius: 200px;
   padding: 0.5em;
   width: 200px;
-}
-
-.Montserrat {
-  font-family: 'Oswald', sans-serif;
 }
 
 .skills li:nth-child(odd) {
@@ -70,9 +66,8 @@ ul {
 }
 
 .projects img {
-  border-radius: 24px;
+  border-radius: 8px;
   margin: 1.5em 35px;
-  padding: 0.5em;
   width: 200px;
 }
 
