@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgb(197 , 255 , 197);
+  background-color: rgb(225, 255, 250);
   color: rgb(66 , 66 , 66);
   font-family: 'Quicksand', 'Ubuntu', sans-serif;
   font-size: 16px;
@@ -41,7 +41,7 @@ ul {
   background-position: 0% 0%;
   background-size: cover;
   color: ghostwhite;
-  padding: 6em 0;
+  padding: 8em 20%;
 }
 
 .footer a:link, .footer a:visited {
@@ -63,12 +63,6 @@ ul {
 
 .skills li:nth-child(odd) {
   font-weight: bold;
-}
-
-.projects img {
-  border-radius: 8px;
-  margin: 1.5em 35px;
-  width: 200px;
 }
 
 .skills {
