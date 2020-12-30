@@ -1,71 +1,75 @@
 * {
-    margin: auto;
+  margin: auto;
 }
+
 body {
-    background-color: rgb(197, 255, 197);
-    color: rgb(66, 66, 66);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    text-align: center;
+  background-color: rgb(225, 255, 250);
+  color: rgb(66 , 66 , 66);
+  font-family: 'Quicksand', 'Ubuntu', sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
+
 header {
-    background-color: rgb(253, 193, 169);
-    min-height: 250px;
-    padding: 1em 35px;
+  background-color: rgb(253 , 193 , 169);
+  min-height: 250px;
+  padding: 1em 35px;
 }
-header .main-picture .description{
-    margin: 2em 2em;
-    max-width: 1000px;
+
+iframe {
+  display: block;
 }
-img .main-picture {
-    background: linear-gradient(to right, rgb(192, 92, 192), rgb(92, 92, 192));
-    border-radius: 200px;
-    padding: 0.5em;
-    width: 200px;
-}
-ul {
-    list-style: none;
-}
-.description {
-    margin: 2em 0;
-    text-align: center;
-}
+
 li {
-    padding: 8px 0;
+  padding: 8px 0;
 }
-li:nth-child(odd) {
-    font-weight: bold;
+
+ul {
+  list-style: none;
+  padding: 0;
 }
-.main-picture{
-    float: left;
-    margin: 2em 12px;
+
+.description {
+  margin: auto;
+  padding: 3em 0;
+  max-width: 1000px;
+  min-width: 500px;
 }
-.Montserrat {
-    font-family: 'Oswald', sans-serif;
+
+.footer {
+  background-image: url('recife_skyline_1_BW.svg');
+  background-position: 0% 0%;
+  background-size: cover;
+  color: ghostwhite;
+  padding: 8em 20%;
 }
-.projects {
-    display: flexbox;
+
+.footer a:link, .footer a:visited {
+  color: lightblue;
+  font-weight: 800;
 }
-.projects img {
-    margin: 1.5em 35px;
-    border-radius: 24px;
-    padding: 0.5em;
-    width: 200px;
+
+.main-picture {
+  float: left;
+  margin: 2em 12px;
 }
+
+.main-picture img {
+  background: linear-gradient(to right, rgb(56, 132, 207), rgb(183, 132, 178), rgb(251, 193, 2));
+  border-radius: 200px;
+  padding: 0.5em;
+  width: 200px;
+}
+
+.skills li:nth-child(odd) {
+  font-weight: bold;
+}
+
+.skills {
+  clear: both;
+}
+
 .title-orange {
-    color: indianred;
-    margin: 4em 35px 12px 35px;
-}
-#footer {
-    background-image: url('recife_skyline_1_BW.svg');
-    background-position: 1% 25%;
-    background-size: cover;
-    color: ghostwhite;
-    padding: 6em 0;
-}
-#footer a:link, #footer a:visited {
-    color: lightblue;
-}
-#skills {
-    clear: both;
+  color: indianred;
+  margin: 4em 35px 12px 35px;
 }
