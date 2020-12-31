@@ -70,6 +70,15 @@ function createProjects() {
   heading.className = 'title-orange';
   heading.innerText = 'Projects';
   projects.appendChild(heading);
+  const projectList = ['projects/project-meme-generator/index.html','projects/project-pixels-art/index.html','projects/project-todo-list/index.html']
+  for (let index = 0; index < projectList.length; index += 1) {
+    let link = document.createElement('a');
+    link.style.display = 'block';
+    link.target = '_blank';
+    link.href = projectList[index];
+    link.innerText = `Project ${index + 1}`;
+    projects.appendChild(link);
+  }
 }
 
 // RPG game with a dice, ABCDEF player rating, inventory, player object
