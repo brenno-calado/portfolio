@@ -87,10 +87,10 @@ function createLinks() {
   document.body.appendChild(blogs);
   const heading = document.createElement('h2');
   heading.className = 'title-orange';
-  heading.innerText = 'Links curiosos';
+  heading.innerText = 'Blog pessoal';
   blogs.appendChild(heading);
-  const linksList = ['https://www.vox.com/a/maps-explain-the-middle-east#map-1','https://malariaatlas.org/explorer/#/','https://bdgex.eb.mil.br/bdgex/','https://earthengine.google.com/timelapse/'];
-  const linksTitle = ['Vox','Malaria Atlas Project','BDGEX - Exército Brasileiro','Timelapse de imagens de satélite'];
+  const linksList = ['blog/remoteplaces.html'];
+  const linksTitle = ['Lugares Distantes da Terra'];
   for (let index = 0; index < linksList.length; index += 1) {
     let link = document.createElement('a');
     link.href = linksList[index];
