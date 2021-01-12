@@ -35,7 +35,7 @@ function createDescription() {
   description.appendChild(subtitle);
   const unorderedList = document.createElement('ul');
   description.appendChild(unorderedList);
-  const joblist = ['Bacharel em Geografia por ser apaixonado desde pequeno pelo Google Earth 🌎❤️','Fiz pesquisas e mapeamentos sobre o mercado imobiliário do centro histórico do Recife🏙️🔍','Participei da fundação da empresa júnior MapGeo na UFPE🗺️','Fiz coleta e analise de dados para uma pesquisa encomendada pela 99🚕'];
+  const joblist = ['Bacharel em Geografia por ser apaixonado desde pequeno pelo Google Earth 🌎❤️','Fiz pesquisas e mapeamentos sobre o mercado imobiliário do centro histórico do Recife 🏙️🔍','Participei da fundação da empresa júnior MapGeo na UFPE 🗺️','Fiz coleta e analise de dados para uma pesquisa encomendada pela 99 🚕'];
   for (let index = 0; index < joblist.length; index += 1) {
     let listItem = document.createElement('li');
     listItem.innerText = joblist[index];
@@ -70,10 +70,16 @@ function createProjects() {
   heading.className = 'title-orange';
   heading.innerText = 'Projects';
   projects.appendChild(heading);
+  const projectList = ['projects/project-meme-generator/index.html','projects/project-pixels-art/index.html','projects/project-todo-list/index.html']
+  for (let index = 0; index < projectList.length; index += 1) {
+    let link = document.createElement('a');
+    link.style.display = 'block';
+    link.target = '_blank';
+    link.href = projectList[index];
+    link.innerText = `Project ${index + 1}`;
+    projects.appendChild(link);
+  }
 }
-
-// RPG game with a dice, ABCDEF player rating, inventory, player object
-// RPG game should be made in hello world repository
 
 function createLinks() {
   const blogs = document.createElement('div');
@@ -81,10 +87,10 @@ function createLinks() {
   document.body.appendChild(blogs);
   const heading = document.createElement('h2');
   heading.className = 'title-orange';
-  heading.innerText = 'Links curiosos';
+  heading.innerText = 'Blog pessoal';
   blogs.appendChild(heading);
-  const linksList = ['https://www.vox.com/a/maps-explain-the-middle-east#map-1','https://malariaatlas.org/explorer/#/','https://bdgex.eb.mil.br/bdgex/','https://earthengine.google.com/timelapse/'];
-  const linksTitle = ['Vox','Malaria Atlas Project','BDGEX - Exército Brasileiro','Timelapse de imagens de satélite'];
+  const linksList = ['blog/remoteplaces.html'];
+  const linksTitle = ['Lugares Distantes da Terra'];
   for (let index = 0; index < linksList.length; index += 1) {
     let link = document.createElement('a');
     link.href = linksList[index];
