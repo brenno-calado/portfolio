@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos terrestres mais distantes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pontos terrestres mais distantes</h1>
+  <hr>
+  <p>Quando eu era pequeno eu gostava de navegar por horas no Google Earth, Google Maps e encontrar paisagens, algum tesouro escondido neste planeta tão vasto que chamamos de Terra. Os momentos mais divertidos eram quando achava algum sítio arqueológico ou algo esquisito marcado por alguém da comunidade Google Earth.</p>
+  <p>Antes do Santuário dos Três reinos em Recife ficar conhecido entre os trilheiros eu já havia encontrado por imagem de satélite. Lembrando aos trilheiros que ali é área privada...</p>
+  <p>Essa foi uma pequena introdução para entender como fui encontrar esses pontos. Numa busca por geodados para uma pesquisa, acabei achando o <a href="https://malariaatlas.org/explorer/#/">Atlas da Malária</a> que contêm informações sobre a disseminação de doenças em regiões tropicais. Entre as camadas do catálogo, há uma camada acerca da acessibilidade da população a cidades em 2015 e acessibilidade a serviços de saúde em 2019. Estas camadas foram produzidas pelo projeto Atlas da Malária de Oxford a partir do trabalho publicado por <a href="doi:10.1038/nature25181">Weiss et al 2018</a>. na descrição da camada de 2019 possui a metodologia utilizada, <a href="https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_accessibility_to_healthcare_2019#description">disponível neste link</a>.</p>
+  <p>Como toda metodologia, pode haver erros na captura de dados. E foi o que observei na distribuição de serviços de saúde no site que utilizaram healthsites.io. Existem pontos de saúde que estão no meio do nada. Possívelmente um erro de precisão das coordenas ou pontos colocados no centróide poligonal de um município. Portanto, os pontos que demonstro a seguir não devem ser considerados como verdade absoluta.</p>
+  <hr>
+  <p>Para achar os pontos mais distantes de cidades e seus serviços de saúde, eu utilizei a camada providenciada pelo Projeto no <a href="https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FOxford_MAP_accessibility_to_healthcare_2019">Earth Engine</a> e alterei o valor mínimo e máximo da camada raster para obter o maior valor encontrado dentro de um continente ou país. Vale ressaltar que esses dados não consideram que você poderia pegar um avião ou helicóptero para chegar no local. Apenas andando ou com acesso motorizado, seja por hidrovia ou rodovia.</p>
+  <p>Existem duas camadas no mapa disponibilizado abaixo. Uma com pontos laranjas que são parte da pesquisa de 2019 e pode-se acessar a outra camada de 2015 clicando no botão superior esquerdo.</p>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1sZ47U_JZivj9mkbWdGULBoDYTlzEn34h" width="640" height="480"></iframe>
+</body>
+</html>

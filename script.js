@@ -35,7 +35,7 @@ function createDescription() {
   description.appendChild(subtitle);
   const unorderedList = document.createElement('ul');
   description.appendChild(unorderedList);
-  const joblist = ['Bacharel em Geografia por ser apaixonado desde pequeno pelo Google Earth 🌎❤️','Fiz pesquisas e mapeamentos sobre o mercado imobiliário do centro histórico do Recife🏙️🔍','Participei da fundação da empresa júnior MapGeo na UFPE🗺️','Fiz coleta e analise de dados para uma pesquisa encomendada pela 99🚕'];
+  const joblist = ['Bacharel em Geografia por ser apaixonado desde pequeno pelo Google Earth 🌎❤️','Fiz pesquisas e mapeamentos sobre o mercado imobiliário do centro histórico do Recife 🏙️🔍','Participei da fundação da empresa júnior MapGeo na UFPE 🗺️','Fiz coleta e analise de dados para uma pesquisa encomendada pela 99 🚕'];
   for (let index = 0; index < joblist.length; index += 1) {
     let listItem = document.createElement('li');
     listItem.innerText = joblist[index];
@@ -80,9 +80,6 @@ function createProjects() {
     projects.appendChild(link);
   }
 }
-
-// RPG game with a dice, ABCDEF player rating, inventory, player object
-// RPG game should be made in hello world repository
 
 function createLinks() {
   const blogs = document.createElement('div');

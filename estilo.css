@@ -1,12 +1,29 @@
+/*
+To enable dark mode in my portfolio, I'll use @media (prefers-color-scheme: dark) {}
+*/
+
 * {
   margin: auto;
+}
+
+a {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+a:link {
+  color:rgb(251, 193, 2)
+}
+
+a:visited {
+  color: rgb(56, 132, 207);
 }
 
 body {
   background-color: rgb(225, 255, 250);
   color: rgb(66 , 66 , 66);
   font-family: 'Quicksand', 'Ubuntu', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -30,10 +47,13 @@ ul {
 }
 
 .description {
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-weight: 1000;
   margin: auto;
-  padding: 3em 0;
   max-width: 1000px;
-  min-width: 500px;
+  min-width: 320px;
+  padding: 3em 0;
 }
 
 .footer {
