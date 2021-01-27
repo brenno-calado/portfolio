@@ -73,11 +73,11 @@ function createProjects() {
   const projectList = {
     project: {
       projectName: 'Project Meme Generator',
-      projectLink: 'projects/project-meme-generator/index.html',
+      projectLink: 'projects/project-meme-generator/index.html',    
+      projectPixelsArt: 'projects/project-pixels-art/index.html',
+      projectTodoList: 'projects/project-todo-list/index.html'
     }
-    
-    Project Pixels Art: 'projects/project-pixels-art/index.html',
-    Project Todo'projects/project-todo-list/index.html'}
+  }
   for (let index in projectList) {
     let link = document.createElement('a');
     link.style.display = 'block';
