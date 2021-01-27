@@ -70,8 +70,15 @@ function createProjects() {
   heading.className = 'title-orange';
   heading.innerText = 'Projects';
   projects.appendChild(heading);
-  const projectList = ['projects/project-meme-generator/index.html','projects/project-pixels-art/index.html','projects/project-todo-list/index.html']
-  for (let index = 0; index < projectList.length; index += 1) {
+  const projectList = {
+    project: {
+      projectName: 'Project Meme Generator',
+      projectLink: 'projects/project-meme-generator/index.html',
+    }
+    
+    Project Pixels Art: 'projects/project-pixels-art/index.html',
+    Project Todo'projects/project-todo-list/index.html'}
+  for (let index in projectList) {
     let link = document.createElement('a');
     link.style.display = 'block';
     link.target = '_blank';

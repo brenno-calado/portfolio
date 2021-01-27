@@ -2,10 +2,6 @@
 To enable dark mode in my portfolio, I'll use @media (prefers-color-scheme: dark) {}
 */
 
-* {
-  margin: auto;
-}
-
 a {
   font-size: 1.1em;
   font-weight: 800;
@@ -24,6 +20,7 @@ body {
   color: rgb(66 , 66 , 66);
   font-family: 'Quicksand', 'Ubuntu', sans-serif;
   font-size: 1em;
+  margin: auto;
   text-align: center;
 }
 
@@ -35,6 +32,7 @@ header {
 
 iframe {
   display: block;
+  margin: auto;
 }
 
 li {
