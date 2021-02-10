@@ -77,7 +77,8 @@ function createProjects() {
     memeGenerator: 'projects/project-meme-generator/index.html',
     pixelsArt: 'projects/project-pixels-art/index.html',
     toDoList: 'projects/project-todo-list/index.html',
-    colorGuess: 'projects/project-color-guess/index.html'
+    colorGuess: 'projects/project-color-guess/index.html',
+    shoppingCart: 'projects/project-shopping-cart/index.html'
   }
   Object.entries(projectList).forEach((entry) => {
     let link = document.createElement('a');
