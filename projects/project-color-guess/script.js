@@ -1,11 +1,11 @@
 let score = 0;
 // Observei PR de Henrique Brito Elias para fazer o task bonus
 
-function buildTitle() {
-  const title = document.createElement('h1');
-  title.id = 'title';
-  title.innerText = 'Advinhe a cor 😎';
-  document.body.appendChild(title);
+function createElement(parent, element, id, text) {
+  const toAppend = document.createElement(element);
+  if (id !== null) toAppend.id = id;
+  if (text !== null) toAppend.innerHTML = text;
+  document.querySelector(parent).appendChild(toAppend);
 }
 
 function buildRandomColorNumbers() {
@@ -91,7 +91,7 @@ function resetGame() {
   const circleArea = document.querySelector('#circle-area');
   answer.innerText = 'Escolha uma cor';
   colorToGuessArea.removeChild(colorToGuessArea.firstChild);
-  buildColorToGuess();
+  createElement('#color-to-guess-area', 'p', 'rgb-color', `${buildRandomColorNumbers()}`);
   while (circleArea.firstChild) {
     circleArea.removeChild(circleArea.firstChild);
   }
@@ -118,9 +118,9 @@ function buildScore() {
 }
 
 window.onload = function () {
-  buildTitle();
+  createElement('body', 'h1', 'title', 'Advinhe a cor 😎');
   buildColorToGuessArea();
-  buildColorToGuess();
+  createElement('#color-to-guess-area', 'p', 'rgb-color', `${buildRandomColorNumbers()}`);
   buildCircleArea();
   buildRandomCircleColors();
   buildAnswer();

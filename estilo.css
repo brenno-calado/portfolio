@@ -79,6 +79,10 @@ ul {
   width: 200px;
 }
 
+.project-link {
+  display: block;
+}
+
 .skills li:nth-child(odd) {
   font-weight: bold;
 }

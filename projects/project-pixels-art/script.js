@@ -19,6 +19,10 @@ function createPalette() {
   main.appendChild(palette);
 }
 
+function randomRgbNumber() {
+  return Math.floor(Math.random() * 256);
+}
+
 function createColorBlocks() {
   const numberOfColors = 4;
   for (let index = 0; index < numberOfColors; index += 1) {
@@ -30,7 +34,7 @@ function createColorBlocks() {
       colorBlock.classList.add('selected');
     } else {
       // Utilizei a solução de Henrique Brito para gerar aleatoriamente cores
-        colorBlock.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)} , ${Math.floor(Math.random() * 256)} , ${Math.floor(Math.random() * 256)})`;
+        colorBlock.style.backgroundColor = `rgb(${randomRgbNumber()} , ${randomRgbNumber()} , ${randomRgbNumber()})`;
     }
     palette.appendChild(colorBlock);
   }
@@ -118,19 +122,11 @@ function recreatePixelBoard(userInputSize) {
 }
 
 function boardSize() {
-  const sizeInput = document.querySelector('#board-size');
-  let userInputSize = sizeInput.value;
-  if (userInputSize === '' || userInputSize <= 0) {
-    return alert('Board inválido!');
-  } else if (userInputSize < 5 && userInputSize > 0) {
-    userInputSize = 5;
-    return recreatePixelBoard(userInputSize);
-  } else if (userInputSize > 50) {
-    userInputSize = 50;
-    return recreatePixelBoard(userInputSize);
-  } else {
-    recreatePixelBoard(userInputSize);
-  }
+  let userInputSize = document.querySelector('#board-size').value;
+  if (userInputSize === '' || userInputSize <= 0) return alert('Board inválido!');
+  if (userInputSize < 5 && userInputSize > 0) userInputSize = 5;
+  if (userInputSize > 50) userInputSize = 50;
+  recreatePixelBoard(userInputSize);
 }
 
 window.onload = function () {

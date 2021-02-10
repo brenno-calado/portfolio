@@ -1,3 +1,11 @@
+const createList = (array, list) => {
+  array.forEach((index) => {
+    let listItem = document.createElement('li');
+    listItem.innerText = index;
+    list.appendChild(listItem);
+  });
+};
+
 function createMainTitle() {
   const mainTitle = document.createElement('div');
   mainTitle.className = 'main-title';
@@ -35,12 +43,11 @@ function createDescription() {
   description.appendChild(subtitle);
   const unorderedList = document.createElement('ul');
   description.appendChild(unorderedList);
-  const joblist = ['Bacharel em Geografia por ser apaixonado desde pequeno pelo Google Earth 🌎❤️','Fiz pesquisas e mapeamentos sobre o mercado imobiliário do centro histórico do Recife 🏙️🔍','Participei da fundação da empresa júnior MapGeo na UFPE 🗺️','Fiz coleta e analise de dados para uma pesquisa encomendada pela 99 🚕'];
-  for (let index = 0; index < joblist.length; index += 1) {
-    let listItem = document.createElement('li');
-    listItem.innerText = joblist[index];
-    unorderedList.appendChild(listItem);
-  }
+  const joblist = ['Bacharel em Geografia por ser apaixonado desde pequeno pelo Google Earth 🌎❤️',
+  'Fiz pesquisas e mapeamentos sobre o mercado imobiliário do centro histórico do Recife 🏙️🔍',
+  'Participei da fundação da empresa júnior MapGeo na UFPE 🗺️',
+  'Fiz coleta e analise de dados para uma pesquisa encomendada pela 99 🚕'];
+  createList(joblist, unorderedList);
 }
 
 function createSkills() {
@@ -55,11 +62,7 @@ function createSkills() {
   unorderedList.className = 'skills';
   skills.appendChild(unorderedList);
   let skillsList = ['Inglês','HTML','CSS','Javascript','Git','Bash','QGIS','Excel','Inkscape','Gimp'];
-  for (let index = 0; index < skillsList.length; index += 1) {
-    let listItem = document.createElement('li');
-    listItem.innerText = skillsList[index];
-    unorderedList.appendChild(listItem);
-  }
+  createList(skillsList, unorderedList);
 }
 
 function createProjects() {
@@ -71,21 +74,19 @@ function createProjects() {
   heading.innerText = 'Projects';
   projects.appendChild(heading);
   const projectList = {
-    project: {
-      projectName: 'Project Meme Generator',
-      projectLink: 'projects/project-meme-generator/index.html',    
-      projectPixelsArt: 'projects/project-pixels-art/index.html',
-      projectTodoList: 'projects/project-todo-list/index.html'
-    }
+    memeGenerator: 'projects/project-meme-generator/index.html',
+    pixelsArt: 'projects/project-pixels-art/index.html',
+    toDoList: 'projects/project-todo-list/index.html',
+    colorGuess: 'projects/project-color-guess/index.html'
   }
-  for (let index in projectList) {
+  Object.entries(projectList).forEach((entry) => {
     let link = document.createElement('a');
-    link.style.display = 'block';
+    link.className = 'project-link';
     link.target = '_blank';
-    link.href = projectList[index];
-    link.innerText = `Project ${index + 1}`;
+    link.href = entry[1];
+    link.innerText = `Project ${entry[0]}`;
     projects.appendChild(link);
-  }
+  })
 }
 
 function createLinks() {
