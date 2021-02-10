@@ -44,6 +44,10 @@ ul {
   padding: 0;
 }
 
+.article {
+  margin: 1em 30px;
+}
+
 .description {
   color: whitesmoke;
   font-size: 1.5em;
