@@ -61,7 +61,7 @@ function createSkills() {
   const unorderedList = document.createElement('ul');
   unorderedList.className = 'skills';
   skills.appendChild(unorderedList);
-  let skillsList = ['Inglês','HTML','CSS','Javascript','Git','Bash','QGIS','Excel','Inkscape','Gimp'];
+  let skillsList = ['Inglês','HTML','CSS','ECMAScript','Jest','React','Git','Bash','QGIS','Excel','Inkscape','Gimp'];
   createList(skillsList, unorderedList);
 }
 
