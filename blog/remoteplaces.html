@@ -11,46 +11,58 @@
     <article class="article">
       <h1>Pontos terrestres mais distantes</h1>
       <hr>
-      <p>Antes de começar sobre o artigo, quero falar um pouco sobre como surgiu este meu interesse por mapas. Quando eu era pequeno eu gostava de navegar por horas no Google Earth, Google Maps e encontrar paisagens, algum tesouro escondido neste planeta tão vasto que chamamos de Terra. Os momentos mais divertidos eram quando achava alguma ruína abandonad ou algo esquisito marcado por alguém da comunidade Google Earth.</p>
+      <p>Antes de começar sobre o artigo, quero falar um pouco sobre como surgiu este meu interesse por mapas. Quando eu era pequeno eu gostava de navegar por horas no Google Earth, Google Maps e encontrar paisagens, algum tesouro escondido neste planeta tão vasto que chamamos de Terra. Os momentos mais divertidos eram quando achava alguma ruína abandonada ou algo esquisito marcado por alguém da comunidade Google Earth.</p>
       <p>Nessas andanças virtuais pude encontrar o Santuário dos Três reinos em Recife antes de ficar conhecido entre os trilheiros. Vasculhei as antigas rotas, igrejas e engenhos do <a href="http://lhs.unb.br/atlas/BRASILIA_QUA_PARTE_PARET_BELGIS">Atlas Digital da América Lusa</a> e até visitei umas ruínas que serão abordadas em um outro artigo</p>
       <p>Essa foi uma pequena introdução para entender como fui encontrar esses pontos. Numa busca por geodados para uma pesquisa, acabei achando o <a href="https://malariaatlas.org/explorer/#/">Atlas da Malária</a> que contêm informações sobre a disseminação de doenças em regiões tropicais. Entre as camadas do catálogo, há uma camada acerca da acessibilidade da população a cidades em 2015 e acessibilidade a serviços de saúde em 2019. Estas camadas foram produzidas pelo projeto Atlas da Malária de Oxford a partir do trabalho publicado por <a href="doi:10.1038/nature25181">Weiss et al 2018</a>. na descrição da camada de 2019 possui a metodologia utilizada, <a href="https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_accessibility_to_healthcare_2019#description">disponível neste link</a>.</p>
-      <p>Como toda metodologia, pode haver erros na captura de dados. E foi o que observei na distribuição de serviços de saúde no site que utilizaram healthsites.io. Existem pontos de saúde que estão no meio do nada. Possívelmente um erro de precisão das coordenas ou pontos colocados no centróide poligonal de um município. Portanto, os pontos que demonstro a seguir não devem ser considerados como verdade absoluta.</p>
+      <p>Como toda metodologia, pode haver erros na captura de dados. E foi o que observei na distribuição de serviços de saúde no site que utilizaram, o <a href="healthsites.io">healthsites.io</a>. Existem pontos de saúde que estão no meio do nada. Possívelmente um erro de precisão das coordenas ou pontos colocados no centróide poligonal de um município. Portanto, os pontos que demonstro a seguir não devem ser considerados como verdade absoluta.</p>
       <hr>
       <p>Para achar os pontos mais distantes de cidades e seus serviços de saúde, eu utilizei a camada providenciada pelo Projeto no <a href="https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FOxford_MAP_accessibility_to_healthcare_2019">Earth Engine</a> e alterei o valor mínimo e máximo da camada raster para obter o maior valor encontrado dentro de um continente ou país. Vale ressaltar que esses dados não consideram que você poderia pegar um avião ou helicóptero para chegar no local. Apenas andando ou com acesso motorizado, seja por hidrovia ou rodovia.</p>
-      <em>Existem duas camadas no mapa disponibilizado abaixo. Uma com pontos laranjas que são parte da pesquisa de 2019 e pode-se acessar a outra camada de 2015 clicando no botão superior esquerdo.</em>
+      <p>Existem duas camadas no mapa disponibilizado abaixo. Uma com pontos laranjas que fazem parte da pesquisa de 2019 e a outra camada de 2015 pode ser acessada clicando no botão superior esquerdo do mapa.</p>
       <p>Abaixo segue o ranking dos pontos terrestres mais distantes em 2019 por transporte motorizado separado por Continente</p>
       <iframe src="https://www.google.com/maps/d/embed?mid=1sZ47U_JZivj9mkbWdGULBoDYTlzEn34h" width="90%" height="480px"></iframe>
-      <h2>Ranking pontos mais distantes (2019)</h2>
+      <h2>Ranking pontos terrestres mais distantes a serviços de saúde(2019)</h2>
       <ol>
         <li>
-          América do Norte - Groelândia
-          <em>14 dias, 9 horas e 49 minutos</em>
+          <h3 class="list-title"> América do Norte - Groelândia</h3>
+          <p>14 dias, 9 horas e 49 minutos</p>
+          <p>No meio desta ilha congelada situa-se o ponto terrestre mais remoto desta pesquisa! Além de remoto é um local que chega facilmente abaixo de -34 graus Celsius e uma geomorfologia que apresentaria grandes desafios pois o ambiente glacial pode ser traiçoeiro com seus precipícios escondidos chamados de crevasses.</p>
         </li>
         <li>
-          Ásia - Rússia
-          <em>5 dias, 1 hora e 10 minutos</em>
+          <h3 class="list-title"> Ásia - Rússia</h3>
+          <p>5 dias, 1 hora e 10 minutos</p>
+          <p>Nas proximidades do Planalto Syverma, em um clima subártico continental está o ponto mais remoto da Ásia. O vilarejo mais próximo fica a 5 dias de viagem sem parada. A temperatura média ao longo do ano fica entre -36 e 16 graus Celsius. Algumas áreas deste planalto podem ter até um quilômetro de <span>permafrost</span>!</p>
         </li>
         <li>
-          África - Saara
-          <em>4 dias, 20 horas e 38 minutos</em>
+          <h3 class="list-title"> África - Saara</h3>
+          <p>4 dias, 20 horas e 38 minutos</p>
+          <p>No meio de uma infinidade de areia e com a umidade do ar podendo chegar a 7%, o ponto mais remoto da África fica no meio do deserto do Saara, no Sudão. Conferindo o <a href="https://www.loc.gov/resource/g8310.ct003693/">mapa do Sudão Anglo-Egípcio de 1928</a>, observa-se nas proximidades um ponto escrito "Ain el Kiyeh?" como a localização de um possível oásis e o oásis Merga ao sul do ponto. Merga, neste mapa de 1928 é notável por ser o ponto de encontro de várias rotas de caravanas históricas.</p>
         </li>
         <li>
-          América do Sul - Amazônia
-          <em>4 dias e 8 horas</em>
+          <h3 class="list-title"> América do Sul - Amazônia</h3>
+          <p>4 dias e 8 horas</p>
+          <p>No meio da Mata amazônica, próximo da tríplice fronteira Brasil-Suriname-Guiana, encontra-se o ponto mais remoto da América do Sul. Em uma área plana cercada por pequenas elevações de 40 metros em média. Este ponto fica a Oeste da aldeia indígena de Kwamalasamutu, no Suriname. nesta região turistas visitam o sítio arqueológico de Werehpai a 10 quilômetros ao Leste da vila. Neste ponto mais remoto não foi encontrado informações relevantes, porém, arqueólogos estão começando a realizar pesquisas demonstrando como a Amazônia pré-colombiana foi um lugar densamente povoado, como mostra o artigo da <a href="https://www.nationalgeographic.com/news/2018/03/amazon-jungle-ancient-population-satellite-computer-model/">National Geographic</a>.</p>
         </li>
         <li>
-          Oceania - Papua Nova Guiné
-          <em>2 dias e 23 horas</em>
+          <h3 class="list-title"> Oceania - Indonésia</h3>
+          <p>2 dias e 23 horas</p>
+          <p>No coração da ilha de Nova Guiné, em uma densa floresta, encontra-se o ponto mais remoto da Oceania. Este ponto demonstra como é falho os parâmetros da pesquisa utilizada por conter um aeroporto há alguns quilômetros de distância. retirando esta variável, é quase inexistente um sistema de estradas na ilha. O que faz com que demore quase 3 dias para chegar a um posto médico.</p>
         </li>
         <li>
-          América Central - Honduras
-          <em>1 dia, 10 horas e 48 minutos</em>
+          <h3 class="list-title"> América Central - Honduras</h3>
+          <p>1 dia, 10 horas e 48 minutos</p>
+          <p>Localizado na Reserva Biológica do Rio Plátano, o ponto mais remoto da América Central está localizado em um vale densamente vegetado cercado por pequenas montanhas. Considerado Patrimônio Mundial pela Unesco em 1982, uma visita a esta reserva natural deve ser de tirar o fôlego! </p>
         </li>
         <li>
-          Europa - Jiehkkevárri
-          <em></em>
+          <h3 class="list-title"> Europa - Jiehkkevárri</h3>
+          <p>21 horas e 15 minutos</p>
+          <p>Este ponto é considerado o ponto mais remoto da Europa Continental sem considerar a Rússia. Localizado em uma declividade próxima ao pico do Jiehkkevárri, este ponto é considerado o mais remoto devido a declividade acentuada do pico. Os parâmetros da pesquisa levam em consideração a declividade como locais mais lentos de serem ultrapassados. Para chegar nesse ponto é recomendado que seja feito por montanhistas experientes.</p>
         </li>
       </ol>
+      <footer>
+        <p>Espero que tenham gostado!
+          <br>
+          OBSERVAÇÂO: Nem cogitem em fazer essas trilhas! 😂</p>
+      </footer>
     </article>
   </section>
   

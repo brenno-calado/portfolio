@@ -39,6 +39,16 @@ li {
   padding: 8px 0;
 }
 
+ol {
+  list-style: none;
+  margin: auto;
+  max-width: 640px;
+}
+
+p {
+  text-align: justify;
+}
+
 ul {
   list-style: none;
   padding: 0;
