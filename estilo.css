@@ -16,7 +16,7 @@ a:visited {
 }
 
 body {
-  background-color: rgb(225, 255, 250);
+  background-color: rgb(240, 255, 252);
   color: rgb(66 , 66 , 66);
   font-family: 'Quicksand', 'Ubuntu', sans-serif;
   font-size: 1em;
@@ -45,17 +45,19 @@ ol {
   max-width: 640px;
 }
 
-p {
-  text-align: justify;
-}
-
 ul {
   list-style: none;
   padding: 0;
 }
 
 .article {
-  margin: 1em 30px;
+  margin: 1em auto;
+  max-width: 800px;
+}
+
+.article p {
+  text-align: justify;
+  margin: 1em 25px;
 }
 
 .description {
@@ -65,7 +67,6 @@ ul {
   margin: auto;
   max-width: 1000px;
   min-width: 320px;
-  padding: 3em 0;
 }
 
 .footer {
@@ -82,8 +83,7 @@ ul {
 }
 
 .main-picture {
-  float: left;
-  margin: 2em 12px;
+  margin: 0.5em 1px;
 }
 
 .main-picture img {
@@ -108,4 +108,11 @@ ul {
 .title-orange {
   color: indianred;
   margin: 4em 35px 12px 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-picture {
+    float: left;
+    margin: 2em 20px;
+  }
 }
