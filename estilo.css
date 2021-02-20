@@ -43,6 +43,7 @@ ol {
   list-style: none;
   margin: auto;
   max-width: 640px;
+  padding: 0;
 }
 
 ul {
@@ -95,6 +96,10 @@ ul {
 
 .project-link {
   display: block;
+}
+
+.ranking-img {
+  width: 100%;
 }
 
 .skills li:nth-child(odd) {
