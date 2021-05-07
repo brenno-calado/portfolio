@@ -61,6 +61,7 @@ main {
   height: 100%;
   margin: 0 5px;
   overflow-y: auto;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
