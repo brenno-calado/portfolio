@@ -3,9 +3,15 @@ import MyContext from '../context/MyContext';
 
 const Home = () => {
   const { skills } = useContext(MyContext);
+  const { setShowButton } = useContext(MyContext);
+
+  const toggleButton = () => {
+    setShowButton(true);
+    setTimeout(() => setShowButton(false), 3000)
+  }
 
   return (
-    <div className="home">
+    <div className="home" onClick={ () => toggleButton() } onScroll={ () => toggleButton() }>
       <h1>Brenno Calado Vieira de Melo Nascimento</h1>
       <article className="resumee">
         <p>{`Brazilian web developer curious about the world`}</p>

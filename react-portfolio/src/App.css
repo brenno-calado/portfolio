@@ -10,7 +10,7 @@ main {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-header, .header-button {
+  .App-header, .app-button {
     transition: right 0.5s ease-in-out;
   }
 }
@@ -29,6 +29,7 @@ main {
   right: 0;
   top: 0;
   width: 40%;
+  z-index: 2;
 }
 
 .App-link, .App-header a {
@@ -44,13 +45,21 @@ main {
   right: -50%;
 }
 
-.header-button {
-  background-color: rgba(245, 245, 245, 0.548);
+.app-button {
+  background-color: rgba(245, 245, 245, 0.8);
   border-radius: 50%;
-  bottom: 10px;
-  padding: 10px;
+  height: 50px;
   position: absolute;
+  right: -50px;
+  width: 50px;
+}
+
+.show {
   right: 5px;
+}
+
+.header-button {
+  bottom: 200px;
 }
 
 .with-header {
@@ -58,10 +67,15 @@ main {
 }
 
 .home {
+  box-sizing: border-box;
   height: 100%;
-  margin: 0 5px;
+  padding: 0 5px;
   overflow-y: auto;
   width: 100%;
+}
+
+.dark-mode-button {
+  bottom: 100px;
 }
 
 @keyframes App-logo-spin {

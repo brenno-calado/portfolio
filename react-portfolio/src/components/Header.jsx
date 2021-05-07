@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import MyContext from '../context/MyContext';
 import { Link } from 'react-router-dom';
-
 
 const Header = () => {
   const [showHeader, setHeader] = useState(false);
+  const { showButton } = useContext(MyContext);
   return (
     <>
       <button
         type="button"
-        className={ `header-button ${showHeader && "with-header"}`}
+        className={ `app-button header-button ${showHeader && "with-header"} ${showButton && 'show'}`}
         onClick={ () => setHeader(!showHeader)}
       >
         <svg width="30" height="30" version="1.1" viewBox="0 0 16.93 16.93" xmlns="http://www.w3.org/2000/svg">
