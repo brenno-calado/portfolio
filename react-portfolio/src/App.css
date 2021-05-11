@@ -4,11 +4,6 @@ main {
   width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-header, .app-button {
     transition: right 0.5s ease-in-out;
@@ -32,7 +27,8 @@ main {
   z-index: 2;
 }
 
-.App-link, .App-header a {
+.App-header a {
+  background-color: #282c34;
   border-bottom: 1px solid silver;
   color: #61dafb;
   height: 50px;
@@ -41,32 +37,64 @@ main {
   width: 100%;
 }
 
-.hide-header {
-  right: -50%;
+.App-header a:hover {
+  background-color: #363b44;
 }
 
 .app-button {
-  background-color: rgba(245, 245, 245, 0.8);
+  background-color: rgba(245, 245, 245, 0.616);
   border-radius: 50%;
+  cursor: pointer;
   height: 50px;
   position: absolute;
   right: -50px;
   width: 50px;
 }
 
-.show {
-  right: 5px;
+.article {
+  margin: 1em auto;
+  max-width: 800px;
+}
+
+.article iframe {
+  display: block;
+  margin: auto;
+}
+
+.article li {
+  padding: 8px 0;
+}
+
+.article ol {
+  list-style: none;
+  margin: auto;
+  max-width: 640px;
+  padding: 0;
+}
+
+.article ul {
+  list-style: none;
+  padding: 0;
+}
+
+.article p {
+  text-align: justify;
+  margin: 1em 25px;
+}
+
+.dark-mode-button {
+  bottom: 100px;
 }
 
 .header-button {
   bottom: 200px;
 }
 
-.with-header {
-  right: 40%;
+.hide-header {
+  right: -50%;
 }
 
-.home {
+.home, .article {
   box-sizing: border-box;
   height: 100%;
   padding: 0 5px;
@@ -74,15 +102,36 @@ main {
   width: 100%;
 }
 
-.dark-mode-button {
-  bottom: 100px;
+.ranking-img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resumee {
+  margin: 2em auto;
+  max-width: 500px;
+  padding: 0 30px;
+  text-align: justify;
+}
+
+.show {
+  right: 5px;
+}
+
+.skills {
+  margin: auto;
+  max-width: 500px;
+}
+
+.skills li {
+  border: 4px solid aquamarine;
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  line-height: 3em;
+  margin: 1em 40px;
+  width: 50px;
+}
+
+.with-header {
+  right: 40%;
 }

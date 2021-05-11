@@ -3,9 +3,14 @@ import MyContext from './MyContext';
 import PropTypes from 'prop-types';
 
 function Provider({ children }) {
-  const skills = ['English','HTML','CSS','ECMAScript','React','Jest','Git','Bash','QGIS','Excel','Inkscape','Gimp'];
+  const skills = ['HTML','CSS','JS','React','Jest','Git','Bash','QGIS','Excel','AI','PS'];
   const [darkMode,setDarkMode] = useState(false);
   const [showButton, setShowButton] = useState(true);
+
+  const toggleButton = () => {
+    setShowButton(true);
+    setTimeout(() => setShowButton(false), 3000)
+  }
 
   return (
     <MyContext.Provider value={{
@@ -14,6 +19,7 @@ function Provider({ children }) {
       showButton,
       setShowButton,
       setDarkMode,
+      toggleButton,
     }}>
       {children}
     </MyContext.Provider>

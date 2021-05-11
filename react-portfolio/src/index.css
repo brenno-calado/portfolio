@@ -9,6 +9,11 @@ body {
   width: 100%;
 }
 
+.dark-mode {
+  color: antiquewhite;
+  background-color: black;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
