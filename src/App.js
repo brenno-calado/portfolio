@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Blog from './pages/Blog';
 import Home from './pages/Home';
@@ -10,20 +10,11 @@ import MostDistantPlaces from './pages/Articles/MostDistantPlaces';
 import './App.css';
 
 function App() {
-  const { showButton, darkMode, toggleButton } = useContext(MyContext);
-  useEffect(() => {
-    toggleButton();
-  }, []);
+  const { darkMode } = useContext(MyContext);
 
   return (
     <main
       className={ `${darkMode && 'dark-mode'}` }
-      onClick={ () => toggleButton() }
-      onKeyUp={ () => toggleButton() }
-      // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
-      role="switch"
-      tabIndex={ 0 }
-      aria-checked={ showButton ? 'true' : 'false' }
     >
       <Header />
       <Switch>

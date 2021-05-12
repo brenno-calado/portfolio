@@ -17,9 +17,8 @@ main {
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  height: inherit;
-  justify-content: flex-end;
-  overflow-x: hidden;
+  height: 100vh;
+  justify-content: center;
   position: absolute;
   right: 0;
   top: 0;
@@ -31,8 +30,8 @@ main {
   background-color: #282c34;
   border-bottom: 1px solid silver;
   color: #61dafb;
-  height: 50px;
-  padding-top: 25px;
+  height: 40px;
+  padding-top: 50px;
   text-align: center;
   width: 100%;
 }
@@ -47,7 +46,7 @@ main {
   cursor: pointer;
   height: 50px;
   position: absolute;
-  right: -50px;
+  right: 20px;
   width: 50px;
 }
 
@@ -118,10 +117,6 @@ main {
   text-align: justify;
 }
 
-.show {
-  right: 5px;
-}
-
 .skills {
   margin: auto;
   max-width: 500px;
@@ -139,4 +134,30 @@ main {
 
 .with-header {
   right: 40%;
+}
+
+@media (min-width: 768px), (orientation: landscape) {
+  .App-header, .app-button {
+    transition: top 0.5s ease-in-out;
+  }
+
+  .App-header {
+    flex-direction: row;
+    height: 30px;
+    width: 100%;
+  }
+
+  .hide-header {
+    right: 0;
+    top: -20%;
+  }
+
+  .header-button {
+    top: 10px;
+  }
+
+  .with-header {
+    right: 20px;
+    top: 60px;
+  }
 }

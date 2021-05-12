@@ -1,17 +1,15 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import MyContext from '../context/MyContext';
 
 const Header = () => {
   const [showHeader, setHeader] = useState(false);
-  const { showButton } = useContext(MyContext);
   return (
     <>
       <button
         type="button"
         className={
           `app-button header-button
-          ${showHeader && 'with-header'} ${showButton && 'show'}`
+          ${showHeader && 'with-header'}`
         }
         onClick={ () => setHeader(!showHeader) }
       >
