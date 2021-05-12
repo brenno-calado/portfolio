@@ -6,8 +6,8 @@ import Projects from './pages/Projects';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MyContext from './context/MyContext';
-import './App.css';
 import MostDistantPlaces from './pages/Articles/MostDistantPlaces';
+import './App.css';
 
 function App() {
   const { darkMode, toggleButton } = useContext(MyContext);
@@ -27,7 +27,7 @@ function App() {
         />
         <Route path="/portfolio/blog" component={ Blog } />
         <Route path="/portfolio/projects" component={ Projects } />
-        <Route exact path="/portfolio/" component={ Home } />
+        <Route exact path="/portfolio" component={ Home } />
       </Switch>
       <Footer />
     </main>

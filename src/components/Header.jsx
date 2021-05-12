@@ -33,9 +33,9 @@ const Header = () => {
         </svg>
       </button>
       <header className={ `App-header ${!showHeader && 'hide-header'}` }>
-        <Link to="/">Home</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/projects">Projects</Link>
+        <Link to="/portfolio">Home</Link>
+        <Link to="/portfolio/blog">Blog</Link>
+        <Link to="/portfolio/projects">Projects</Link>
       </header>
     </>
   );

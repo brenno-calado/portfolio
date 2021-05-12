@@ -2,12 +2,17 @@ import React, { useContext } from 'react';
 import MyContext from '../context/MyContext';
 
 const Home = () => {
-  const { skills, toggleButton } = useContext(MyContext);
+  const { showButton, skills, toggleButton } = useContext(MyContext);
 
   return (
     <section
       className="home"
       onScroll={ () => toggleButton() }
+      onClick={ () => toggleButton() }
+      onKeyUp={ () => toggleButton() }
+      role="switch"
+      tabIndex={ 0 }
+      aria-checked={ showButton ? 'true' : 'false' }
     >
       <h1>Brenno Calado Vieira de Melo Nascimento</h1>
       <article className="resumee">
