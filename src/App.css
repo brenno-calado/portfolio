@@ -102,6 +102,11 @@ main {
   width: 100%;
 }
 
+.home img {
+  border: 5px solid coral;
+  border-radius: 50%;
+}
+
 .ranking-img {
   width: 100%;
 }
@@ -123,7 +128,7 @@ main {
 }
 
 .skills li {
-  border: 4px solid aquamarine;
+  border: 4px solid coral;
   border-radius: 50%;
   display: inline-block;
   height: 50px;

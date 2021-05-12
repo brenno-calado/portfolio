@@ -10,7 +10,7 @@ import MostDistantPlaces from './pages/Articles/MostDistantPlaces';
 import './App.css';
 
 function App() {
-  const { darkMode, toggleButton } = useContext(MyContext);
+  const { showButton, darkMode, toggleButton } = useContext(MyContext);
   useEffect(() => {
     toggleButton();
   }, []);
@@ -18,6 +18,12 @@ function App() {
   return (
     <main
       className={ `${darkMode && 'dark-mode'}` }
+      onClick={ () => toggleButton() }
+      onKeyUp={ () => toggleButton() }
+      // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
+      role="switch"
+      tabIndex={ 0 }
+      aria-checked={ showButton ? 'true' : 'false' }
     >
       <Header />
       <Switch>
