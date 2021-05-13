@@ -4,20 +4,27 @@ main {
   width: 100%;
 }
 
+img {
+  border-radius: 12px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-header, .app-button {
     transition: right 0.5s ease-in-out;
+  }
+  p, .skills li {
+    transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
   }
 }
 
 .App-header {
   align-items: center;
-  background-color: #282c34;
+  background-color: inherit;
   color: white;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  height: 100vh;
+  height: 120vh;
   justify-content: center;
   position: absolute;
   right: 0;
@@ -27,9 +34,8 @@ main {
 }
 
 .App-header a {
-  background-color: #282c34;
+  background-color: inherit;
   border-bottom: 1px solid silver;
-  color: #61dafb;
   height: 40px;
   padding-top: 50px;
   text-align: center;
@@ -37,7 +43,7 @@ main {
 }
 
 .App-header a:hover {
-  background-color: #363b44;
+  box-shadow: inset 0 -10px coral;
 }
 
 .app-button {
@@ -50,35 +56,15 @@ main {
   width: 50px;
 }
 
-.article {
+.article * {
   margin: 1em auto;
   max-width: 800px;
-}
-
-.article iframe {
-  display: block;
-  margin: auto;
-}
-
-.article li {
-  padding: 8px 0;
-}
-
-.article ol {
-  list-style: none;
-  margin: auto;
-  max-width: 640px;
-  padding: 0;
-}
-
-.article ul {
-  list-style: none;
-  padding: 0;
+  padding: 4px 0;
 }
 
 .article p {
   text-align: justify;
-  margin: 1em 25px;
+  padding: 0 25px;
 }
 
 .dark-mode-button {
@@ -118,18 +104,36 @@ main {
 }
 
 .skills {
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em auto;
   max-width: 500px;
 }
 
 .skills li {
   border: 4px solid coral;
   border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
   display: inline-block;
-  height: 50px;
-  line-height: 3em;
+  height: 80px;
+  line-height: 4em;
   margin: 1em 40px;
-  width: 50px;
+  width: 80px;
+}
+
+.skills li:hover {
+  border: 40px solid coral;
+  box-sizing: border-box;
+  color: antiquewhite;
+  margin: 1em 40px;
+  line-height: 0px;
+}
+
+.skills li:hover span {
+  position: relative;
+  left: -30px;
 }
 
 .with-header {
@@ -158,6 +162,6 @@ main {
 
   .with-header {
     right: 20px;
-    top: 60px;
+    top: 70px;
   }
 }

@@ -22,9 +22,9 @@ const Home = () => {
           and I've done data analysis for a ridesharing app.`}
         </p>
       </article>
+      <h2>Skills</h2>
       <article className="skills">
-        <h2>Skills</h2>
-        { skills.map((skill) => <li key={ skill }>{ skill }</li>) }
+        { skills.map((skill) => <li key={ skill }><span>{ skill }</span></li>) }
       </article>
     </section>
   );
