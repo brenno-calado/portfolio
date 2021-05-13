@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Brenno's App",
+  "name": "Brenno's Portfolio App",
   "icons": [
     {
       "src": "pixel-caboclo.svg",
@@ -18,8 +18,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/portfolio/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#cd5c5c",
+  "background_color": "#f2fff2"
 }

@@ -1,15 +1,16 @@
 import React, { useContext } from 'react';
 import MyContext from '../context/MyContext';
+import profile from '../images/perfil_insta.jpg';
 
 const Home = () => {
-  const { skills, toggleButton } = useContext(MyContext);
+  const { skills } = useContext(MyContext);
 
   return (
     <section
       className="home"
-      onScroll={ () => toggleButton() }
     >
       <h1>Brenno Calado Vieira de Melo Nascimento</h1>
+      <img src={ profile } alt="brenno calado's profile" />
       <article className="resumee">
         <p>
           {`Hi! I'm a brazilian web developer curious about the world.

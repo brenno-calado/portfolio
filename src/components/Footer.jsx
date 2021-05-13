@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import MyContext from '../context/MyContext';
 
 const Footer = () => {
-  const { darkMode, setDarkMode, showButton } = useContext(MyContext);
+  const { darkMode, setDarkMode } = useContext(MyContext);
   const moon = () => (
     <svg fill={ darkMode ? '#f3f3f3' : '#3f3f3f' } width="32" height="32" version="1.1" viewBox="0 0 8.467 8.467" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <button
-      className={ `app-button dark-mode-button ${showButton && 'show'}` }
+      className="app-button dark-mode-button"
       type="button"
       onClick={ () => setDarkMode(!darkMode) }
     >
