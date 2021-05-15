@@ -48,6 +48,8 @@ img {
 
 .app-button {
   background-color: rgba(245, 245, 245, 0.616);
+  background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 50%;
   cursor: pointer;
   height: 50px;
@@ -72,6 +74,7 @@ img {
 }
 
 .header-button {
+  background-image: url('./images/menu.svg');
   bottom: 200px;
 }
 
@@ -137,6 +140,7 @@ img {
 }
 
 .with-header {
+  background-image: url('./images/hide_menu.svg');
   right: 40%;
 }
 
