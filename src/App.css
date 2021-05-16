@@ -8,15 +8,6 @@ img {
   border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-header, .app-button {
-    transition: right 0.5s ease-in-out;
-  }
-  p, .skills li {
-    transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
-  }
-}
-
 .App-header {
   align-items: center;
   background-color: inherit;
@@ -90,9 +81,19 @@ img {
   width: 100%;
 }
 
-.home img {
+.profile {
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  background-image: url('./images/perfil_insta.jpg');
   border: 5px solid coral;
   border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.profile:hover {
+  animation: flip 0.5s ease-in-out forwards;
 }
 
 .ranking-img {
@@ -167,5 +168,25 @@ img {
   .with-header {
     right: 20px;
     top: 70px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-header, .app-button {
+    transition: right 0.5s ease-in-out;
+  }
+  p, .skills li {
+    transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0)
+  }
+  100% {
+    background-size: contain;
+    background-image: url('./images/pixel-caboclo.svg');
+    transform: rotateY(180deg);
   }
 }
