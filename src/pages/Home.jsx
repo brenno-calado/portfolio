@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import MyContext from '../context/MyContext';
-import profile from '../images/perfil_insta.jpg';
 
 const Home = () => {
   const { skills } = useContext(MyContext);
@@ -10,7 +9,10 @@ const Home = () => {
       className="home"
     >
       <h1>Brenno Calado Vieira de Melo Nascimento</h1>
-      <img src={ profile } alt="brenno calado's profile" />
+      <div
+        className="profile"
+        alt="brenno calado's profile"
+      />
       <article className="resumee">
         <p>
           {`Hi! I'm a brazilian web developer curious about the world.
@@ -22,9 +24,9 @@ const Home = () => {
           and I've done data analysis for a ridesharing app.`}
         </p>
       </article>
+      <h2>Skills</h2>
       <article className="skills">
-        <h2>Skills</h2>
-        { skills.map((skill) => <li key={ skill }>{ skill }</li>) }
+        { skills.map((skill) => <li key={ skill }><span>{ skill }</span></li>) }
       </article>
     </section>
   );
