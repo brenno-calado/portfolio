@@ -7,26 +7,26 @@ const MostDistantPlaces = () => (
     <p>
       Antes de começar sobre o artigo, quero falar um pouco sobre como encontrei esses dados. Numa busca por geodados para uma pesquisa, acabei achando o Atlas da Malária disponível neste
       {' '}
-      <a href="https://malariaatlas.org/explorer/#/">link</a>
+      <a target="_blank" rel="noreferrer" href="https://malariaatlas.org/explorer/#/">link</a>
       {' '}
       que contêm informações sobre a disseminação de doenças em regiões tropicais. Entre as camadas do catálogo, há uma camada acerca da acessibilidade da população a cidades em 2015 e acessibilidade a serviços de saúde em 2019. Estas camadas foram produzidas pelo projeto Atlas da Malária de Oxford a partir do trabalho publicado por
       {' '}
-      <a href="doi:10.1038/nature25181">Weiss et al 2018</a>
+      <a target="_blank" rel="noreferrer" href="doi:10.1038/nature25181">Weiss et al 2018</a>
       . Na descrição da camada de 2019 possui a metodologia utilizada,
       {' '}
-      <a href="https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_accessibility_to_healthcare_2019#description">disponível neste link</a>
+      <a target="_blank" rel="noreferrer" href="https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_accessibility_to_healthcare_2019#description">disponível neste link</a>
       .
     </p>
     <p>
       Como toda metodologia, podem haver erros na captura de dados. E foi o que observei na distribuição de serviços de saúde no site que utilizaram, o
       {' '}
-      <a href="healthsites.io">healthsites.io</a>
+      <a target="_blank" rel="noreferrer" href="healthsites.io">healthsites.io</a>
       . Existem pontos de saúde que estão no meio do nada. Possívelmente um erro de precisão das coordenas ou pontos colocados no centróide poligonal de um município. Portanto, os pontos que demonstro a seguir não devem ser considerados como verdade absoluta.
     </p>
     <p>
       Para achar os pontos mais distantes de cidades e seus serviços de saúde, eu utilizei a camada providenciada pelo Projeto no
       {' '}
-      <a href="https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FOxford_MAP_accessibility_to_healthcare_2019">Earth Engine</a>
+      <a target="_blank" rel="noreferrer" href="https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FOxford_MAP_accessibility_to_healthcare_2019">Earth Engine</a>
       {' '}
       e alterei o valor mínimo e máximo da camada raster para obter o maior valor encontrado dentro de um continente ou país. Vale ressaltar que esses dados não consideram que você poderia pegar um avião ou helicóptero para chegar no local. Apenas andando ou com acesso motorizado, seja por hidrovia ou rodovia.
     </p>
@@ -60,7 +60,7 @@ const MostDistantPlaces = () => (
         <p>
           No meio de uma infinidade de areia e com a umidade do ar podendo chegar a 7%, o ponto mais remoto da África fica no meio do deserto do Saara, no Sudão. Conferindo o
           {' '}
-          <a href="https://www.loc.gov/resource/g8310.ct003693/">mapa do Sudão Anglo-Egípcio de 1928</a>
+          <a target="_blank" rel="noreferrer" href="https://www.loc.gov/resource/g8310.ct003693/">mapa do Sudão Anglo-Egípcio de 1928</a>
           , observa-se nas proximidades um ponto escrito
           {' '}
           <i>Ain el Kiyeh?</i>
@@ -76,7 +76,7 @@ const MostDistantPlaces = () => (
         <p>
           No meio da Mata amazônica, próximo da tríplice fronteira Brasil-Suriname-Guiana, encontra-se o ponto mais remoto da América do Sul. Em uma área plana cercada por pequenas elevações de 40 metros em média. Este ponto fica a Oeste da aldeia indígena de Kwamalasamutu, no Suriname. nesta região turistas visitam o sítio arqueológico de Werehpai a 10 quilômetros ao Leste da vila. Neste ponto mais remoto não foi encontrado informações relevantes, porém, arqueólogos estão começando a realizar pesquisas demonstrando como a Amazônia pré-colombiana foi um lugar densamente povoado, como mostra o artigo da
           {' '}
-          <a href="https://www.nationalgeographic.com/news/2018/03/amazon-jungle-ancient-population-satellite-computer-model/">National Geographic</a>
+          <a target="_blank" rel="noreferrer" href="https://www.nationalgeographic.com/news/2018/03/amazon-jungle-ancient-population-satellite-computer-model/">National Geographic</a>
           .
         </p>
         <img className="ranking-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Amazon_River_in_Brazil.jpg/800px-Amazon_River_in_Brazil.jpg" alt="Rio meandrante na floresta amazônica visto do espaço" />
