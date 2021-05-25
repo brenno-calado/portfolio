@@ -8,7 +8,10 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "eslint-config-trybe-frontend": "^1.2.1",
-    "eslint-config-trybe-fundamentals": "^1.1.0",
+    "axios": "^0.21.1",
+    "clipboard-copy": "^3.1.0",
+    "history": "^4.7.2",
+    "lodash": "^4.17.15",
     "lint": "^0.7.0",
     "postcss": "^8.2.15",
     "prop-types": "^15.7.2",
@@ -17,12 +20,16 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "stylelint": "^13.13.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "websocket-extensions": ">=0.1.4"
   },
   "scripts": {
+    "cy": "cypress run",
+    "cy:open": "cypress open",
     "start": "BROWSER=google-chrome-stable react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --no-inline-config -c .eslintrc.json . --ext .js,.jsx",
     "predeploy": "npm run build",
@@ -47,6 +54,9 @@
     ]
   },
   "devDependencies": {
+    "clipboardy": "^2.1.0",
+    "cypress": "^3.7.0",
+    "cypress-multi-reporters": "^1.4.0",
     "eslint": "^7.25.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",

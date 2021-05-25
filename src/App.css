@@ -14,7 +14,6 @@ img {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
   height: 120vh;
   justify-content: center;
   position: absolute;
@@ -27,6 +26,7 @@ img {
 .App-header a {
   background-color: inherit;
   border-bottom: 1px solid silver;
+  font-size: 22px;
   height: 40px;
   padding-top: 50px;
   text-align: center;
@@ -145,6 +145,15 @@ img {
   right: 40%;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-header, .app-button {
+    transition: right 0.5s ease-in-out;
+  }
+  p, .skills li {
+    transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+}
+
 @media (min-width: 768px), (orientation: landscape) {
   .App-header, .app-button {
     transition: top 0.5s ease-in-out;
@@ -158,7 +167,7 @@ img {
 
   .hide-header {
     right: 0;
-    top: -20%;
+    top: -70px;
   }
 
   .header-button {
@@ -168,15 +177,6 @@ img {
   .with-header {
     right: 20px;
     top: 70px;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-header, .app-button {
-    transition: right 0.5s ease-in-out;
-  }
-  p, .skills li {
-    transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
   }
 }
 
