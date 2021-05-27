@@ -86,7 +86,7 @@ const ShoppingCart = () => {
 
   useEffect(() => {
     document.title = 'Mercado Libre Pirata';
-    document.getElementById('favicon').href = './mlp.svg';
+    // document.getElementById('favicon').href = './mlp.svg';
     searchAPI('computador');
     retrieveLocalStorage();
     return () => {
