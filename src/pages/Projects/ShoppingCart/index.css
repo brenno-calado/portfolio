@@ -31,14 +31,14 @@
 }
 
 .item {
-  border: 2px solid blue;
+  border: 2px solid coral;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 5px;
-  width: 200px;
+  margin: 15px;
+  width: 300px;
 }
 
 .item .item__sku {
@@ -56,8 +56,10 @@
 }
 
 .item .item__add {
-  background-color: green;
+  background-color: indianred;
   border: 0;
+  color: antiquewhite;
+  font-weight: 800;
   cursor: pointer;
   margin: 0;
   padding: 5px;

@@ -110,7 +110,7 @@ const ShoppingCart = () => {
             <section className="item" key={ product.id }>
               <span className="item__sku">{ product.id }</span>
               <span className="item__title">{ product.title }</span>
-              <span className="item__price">{ product.price }</span>
+              <span className="item__price">{ `R$ ${product.price}` }</span>
               <img
                 className="item__image"
                 src={ product.thumbnail }
