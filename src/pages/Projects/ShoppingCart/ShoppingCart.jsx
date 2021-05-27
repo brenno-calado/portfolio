@@ -6,13 +6,6 @@ const ShoppingCart = () => {
   const enterKey = 13;
   const [list, setList] = useState([]);
 
-  function getInfoFromProductItem(item) {
-    const name = item.querySelector('span.item__title').innerText;
-    const sku = item.querySelector('span.item__sku').innerText;
-    const salePrice = item.querySelector('span.item__price').innerText;
-    return { sku, name, salePrice };
-  }
-
   function toLocalStorage({ sku, name, salePrice }) {
     let storage = JSON.parse(localStorage.getItem('MLP'));
     storage = { [sku]: { name, salePrice }, ...storage };
@@ -22,7 +15,7 @@ const ShoppingCart = () => {
 
   function sumCartPrices() {
     let cartPrice = 0;
-    const store = localStorage.getItem('MLP');
+    const store = JSON.parse(localStorage.getItem('MLP'));
     if (store !== null) {
       Object.entries(store).forEach((product) => {
         cartPrice += Number(product[1].salePrice);
@@ -42,12 +35,14 @@ const ShoppingCart = () => {
   }
 
   function cartItemClickListener(evt) {
+    const store = JSON.parse(localStorage.getItem('MLP'));
+    delete store[evt.target.id];
+    localStorage.setItem('MLP', JSON.stringify(store));
     evt.target.remove();
-    localStorage.removeItem(evt.target.id);
     sumCartPrices();
   }
 
-  function createCartItemElement({ sku, name, salePrice }) {
+  function createCartItemElement(sku, name, salePrice) {
     const li = document.createElement('li');
     li.className = 'cart__item';
     li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: $${salePrice}`;
@@ -56,22 +51,23 @@ const ShoppingCart = () => {
     document.querySelector('.cart__items').appendChild(li);
     toLocalStorage({ sku, name, salePrice });
     sumCartPrices();
-    return li;
   }
 
   function retrieveLocalStorage() {
     const storageObject = JSON.parse(localStorage.getItem('MLP'));
     if (storageObject !== null) {
       Object.entries(storageObject).forEach((obj) => {
-        const { sku, name, price } = obj[1];
-        createCartItemElement({ sku, name, price });
+        const { name, salePrice } = obj[1];
+        createCartItemElement(obj[0], name, salePrice);
       });
     }
   }
 
-  function addToCart({ parentNode }) {
-    const { sku, name, salePrice } = getInfoFromProductItem(parentNode);
-    createCartItemElement({ sku, name, salePrice });
+  function addToCart({ parentNode: item }) {
+    const name = item.querySelector('span.item__title').innerText;
+    const sku = item.querySelector('span.item__sku').innerText;
+    const salePrice = item.querySelector('span.item__price').innerText;
+    createCartItemElement(sku, name, salePrice);
   }
 
   const searchAPI = async (evt) => {
@@ -86,7 +82,6 @@ const ShoppingCart = () => {
 
   useEffect(() => {
     document.title = 'Mercado Libre Pirata';
-    // document.getElementById('favicon').href = './mlp.svg';
     searchAPI('computador');
     retrieveLocalStorage();
     return () => {
@@ -109,7 +104,7 @@ const ShoppingCart = () => {
           Buscar
         </button>
       </section>
-      <section className="container">
+      <section className="container article">
         <section className="items">
           { list.length === 0 ? 'loading...' : list.map((product) => (
             <section className="item" key={ product.id }>
