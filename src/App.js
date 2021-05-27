@@ -7,6 +7,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MyContext from './context/MyContext';
 import MostDistantPlaces from './pages/Articles/MostDistantPlaces';
+import ShoppingCart from './pages/Projects/ShoppingCart/ShoppingCart';
+// import RecipeApp from './pages/Projects/RecipeApp';
 import './App.css';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
     >
       <Header />
       <Switch>
+        <Route path="/portfolio/projects/shopping-cart" component={ ShoppingCart } />
+        {/* <Route path="/portfolio/projects/recipe-app" component={ RecipeApp } /> */}
         <Route
           path="/portfolio/blog/most-distant-places"
           component={ MostDistantPlaces }
