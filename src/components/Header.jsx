@@ -15,9 +15,11 @@ const Header = () => {
         aria-label="menu button"
       />
       <header className={ `App-header ${!showHeader && 'hide-header'}` }>
-        <Link to="/portfolio">Home</Link>
-        <Link to="/portfolio/blog">Blog</Link>
-        <Link to="/portfolio/projects">Projects</Link>
+        <Link to="/portfolio" onClick={ () => setHeader(!showHeader) }>Home</Link>
+        <Link to="/portfolio/blog" onClick={ () => setHeader(!showHeader) }>Blog</Link>
+        <Link to="/portfolio/projects" onClick={ () => setHeader(!showHeader) }>
+          Projects
+        </Link>
       </header>
     </>
   );
