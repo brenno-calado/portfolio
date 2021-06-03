@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Projects = () => (
   <>
     <h1>Projects</h1>
-    <ul>
+    <ul className="project-list">
       <li>
         <a
           target="_blank"
