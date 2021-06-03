@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Projects = () => (
   <>
@@ -13,9 +12,6 @@ const Projects = () => (
         >
           Map portfolio
         </a>
-      </li>
-      <li>
-        <Link to="/portfolio/projects/shopping-cart">Shopping Cart</Link>
       </li>
     </ul>
   </>
