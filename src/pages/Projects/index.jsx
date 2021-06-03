@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Projects = () => (
   <>
@@ -15,7 +14,22 @@ const Projects = () => (
         </a>
       </li>
       <li>
-        <Link to="/portfolio/projects/shopping-cart">Shopping Cart</Link>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/brenno-calado/sd-09-project-trivia-react-redux/tree/main-group-9"
+        >
+          Trivia Game - Trybe (Grupo 9)
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/brenno-calado/sd-09-project-recipes-app/tree/main-group-25"
+        >
+          Recipe App - Trybe (Grupo 25)
+        </a>
       </li>
     </ul>
   </>
