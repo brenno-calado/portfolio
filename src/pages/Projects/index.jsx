@@ -32,7 +32,11 @@ const Projects = () => (
         </a>
       </li>
       <li>
-        <a href="https://github.com/brenno-calado/bigbluebutton">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/brenno-calado/bigbluebutton"
+        >
           BigBlueButton
         </a>
       </li>
