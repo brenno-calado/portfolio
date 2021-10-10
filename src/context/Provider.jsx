@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import MyContext from './MyContext';
+import { skills } from '../utils/variables.json';
 
 function Provider({ children }) {
-  const skills = [
-    'HTML', 'CSS', 'JS', 'React', 'Jest', 'Git', 'Bash', 'QGIS', 'Excel', 'AI', 'PS',
-  ];
   const [darkMode, setDarkMode] = useState(false);
 
   return (

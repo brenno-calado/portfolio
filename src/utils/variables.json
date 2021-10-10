@@ -1,0 +1,27 @@
+{
+  "skills": ["HTML",
+  "CSS",
+  "JS",
+  "React",
+  "Node",
+  "MySQL",
+  "MongoDB",
+  "Jest",
+  "Git",
+  "Bash",
+  "QGIS",
+  "Excel",
+  "Python",
+  "PyTest",
+  "Sequelize",
+  "Mongoose",
+  "Heroku",
+  "Socket.io"
+  ],
+  "projects": [
+    ["Map portfolio", "https://docs.google.com/document/d/1CoJgS7dIN31suNtyBApJmmjoCGlBs8YnYPF3mzATRc8/edit?usp=sharing"],
+    ["Trivia Game - Trybe (Grupo 9)", "https://github.com/brenno-calado/sd-09-project-trivia-react-redux/tree/main-group-9"],
+    ["Recipe App - Trybe (Grupo 25)", "https://github.com/brenno-calado/sd-09-project-recipes-app/tree/main-group-25"],
+    ["BigBlueButton", "https://github.com/brenno-calado/bigbluebutton"]
+  ]
+}

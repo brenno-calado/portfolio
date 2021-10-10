@@ -65,7 +65,7 @@ img {
 }
 
 .header-button {
-  background-image: url('./images/menu.svg');
+  background-image: url('./assets/menu.svg');
   bottom: 200px;
 }
 
@@ -85,7 +85,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
-  background-image: url('./images/perfil_insta.jpg');
+  background-image: url('./assets/perfil_insta.jpg');
   border: 5px solid coral;
   border-radius: 50%;
   height: 150px;
@@ -146,7 +146,7 @@ img {
 }
 
 .with-header {
-  background-image: url('./images/hide_menu.svg');
+  background-image: url('./assets/hide_menu.svg');
   right: 40%;
 }
 
@@ -191,7 +191,7 @@ img {
   }
   100% {
     background-size: cover;
-    background-image: url('./images/pixel-caboclo.svg');
+    background-image: url('./assets/pixel-caboclo.svg');
     transform: rotateY(180deg);
   }
 }
@@ -199,7 +199,7 @@ img {
 @keyframes flip-out {
   0%{
     background-size: cover;
-    background-image: url('./images/pixel-caboclo.svg');
+    background-image: url('./assets/pixel-caboclo.svg');
     transform: rotateY(180deg)
   }
   100% {
