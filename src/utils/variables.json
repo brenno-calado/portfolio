@@ -19,9 +19,41 @@
   "Socket.io"
   ],
   "projects": [
-    ["Map portfolio", "https://docs.google.com/document/d/1CoJgS7dIN31suNtyBApJmmjoCGlBs8YnYPF3mzATRc8/edit?usp=sharing"],
-    ["Trivia Game - Trybe (Grupo 9)", "https://github.com/brenno-calado/sd-09-project-trivia-react-redux/tree/main-group-9"],
-    ["Recipe App - Trybe (Grupo 25)", "https://github.com/brenno-calado/sd-09-project-recipes-app/tree/main-group-25"],
-    ["BigBlueButton", "https://github.com/brenno-calado/bigbluebutton"]
+    {
+      "src": "",
+      "title": "Webchat",
+      "link": "https://github.com/brenno-calado/sd-09-project-webchat",
+      "description": "Webchat utilizando socket.io, banco de dados em cache e banco de dados não relacional com arquitetura MVC"
+    },
+    {
+      "src": "",
+      "title": "Trivia Game",
+      "link": "https://github.com/brenno-calado/sd-09-project-trivia-react-redux/tree/main-group-9",
+      "description": ""
+    },
+    {
+      "src": "",
+      "title": "Delivery App",
+      "link": "https://github.com/brenno-calado/delivery-app-group-13",
+      "description": ""
+    },
+    {
+      "src": "",
+      "title": "Cookmaster",
+      "link": "https://github.com/brenno-calado/sd-09-cookmaster-v2",
+      "description": ""
+    },
+    {
+      "src": "",
+      "title": "Integração ASAAS + Memberkit (Proof of Concept)",
+      "link": "https://asaas-webhook.herokuapp.com/view/vista",
+      "description": "Proof of concept de integração do sistema de pagamentos da ASAAS e a plataforma de cursos Memberkit"
+    },
+    {
+      "src": "",
+      "title": "BigBlueButton",
+      "link": "https://github.com/brenno-calado/bigbluebutton",
+      "description": "Customizações da plataforma de video-aulas como ajuste da webcam e tempo de aula decorrido para o professor"
+    }
   ]
 }

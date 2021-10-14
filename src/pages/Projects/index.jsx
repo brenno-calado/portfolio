@@ -8,13 +8,17 @@ const Projects = () => (
       {
         projects.map((project, index) => (
           <li key={ index }>
+            <img src={ project.src } alt={ project.title } />
             <a
               target="_blank"
               rel="noreferrer"
-              href={ project[1] }
+              href={ project.link }
             >
-              {project[0]}
+              { project.title }
             </a>
+            <p>
+              { project.description }
+            </p>
           </li>
         ))
       }
