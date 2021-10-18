@@ -5,13 +5,18 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Provider from './context/Provider';
+import IntlProvider from './locales/provider';
+
+const locale = navigator ? navigator.language.split(/-|_/)[0] : 'en';
 
 ReactDOM.render(
-  <Provider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>,
+  <IntlProvider locale={ locale }>
+    <Provider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  </IntlProvider>,
   document.getElementById('root'),
 );
 
