@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [showHeader, setHeader] = useState(false);
+  const menu = {
+    Home: '/portfolio',
+    Blog: '/portfolio/blog',
+    Projects: '/portfolio/projects',
+  };
+
   return (
     <>
       <button
@@ -15,11 +22,13 @@ const Header = () => {
         aria-label="menu button"
       />
       <header className={ `App-header ${!showHeader && 'hide-header'}` }>
-        <Link to="/portfolio" onClick={ () => setHeader(!showHeader) }>Home</Link>
-        <Link to="/portfolio/blog" onClick={ () => setHeader(!showHeader) }>Blog</Link>
-        <Link to="/portfolio/projects" onClick={ () => setHeader(!showHeader) }>
-          Projects
-        </Link>
+        {
+          Object.keys(menu).map((link) => (
+            <Link to={ menu[link] } key={ link } onClick={ () => setHeader(!showHeader) }>
+              <FormattedMessage id={ link } />
+            </Link>
+          ))
+        }
       </header>
     </>
   );
