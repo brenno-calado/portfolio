@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Blog from './pages/Blog';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -18,6 +18,9 @@ function App() {
     >
       <Header />
       <Switch>
+        <Route exact path="/">
+          <Redirect to="/portfolio" />
+        </Route>
         <Route
           path="/portfolio/blog/most-distant-places"
           component={ MostDistantPlaces }
