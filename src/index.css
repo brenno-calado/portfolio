@@ -15,12 +15,20 @@ body, main {
 }
 
 a {
-  color: coral;
+  color: #ff4500;
 }
 
 .dark-mode {
   color: antiquewhite;
   background-color: #282c34;
+}
+
+.dark-card {
+  background-color: #181a1f;
+}
+
+.light-card {
+  background-color: floralwhite;
 }
 
 code {
