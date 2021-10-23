@@ -9,14 +9,14 @@ function Provider({ children, locale }) {
   const defaultLang = locales.english;
 
   const reducer = (state, action) => {
-    const actionsTypes = {
-      reset: locale || defaultLang,
-      setLocale: () => ({ ...state, locale: action.locale }),
-    };
-    if (actionsTypes[action.type]) {
-      return actionsTypes[action.type];
+    switch (action.type) {
+    case 'reset':
+      return locale || defaultLang;
+    case 'setLocale':
+      return { ...state, action: action.locale };
+    default:
+      return locale || defaultLang;
     }
-    return locale || defaultLang;
   };
 
   const [language, dispatch] = useReducer(reducer, defaultLang);
