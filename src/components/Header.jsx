@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
+import MyContext from '../context/MyContext';
+import locales from '../locales/locales';
 
 const Header = () => {
+  const { dispatch } = useContext(MyContext);
   const [showHeader, setHeader] = useState(false);
   const menu = {
     Home: '/portfolio',
     Blog: '/portfolio/blog',
     Projects: '/portfolio/projects',
+  };
+
+  const setLanguage = (locale) => {
+    dispatch({
+      type: 'setLocale',
+      locale,
+    });
   };
 
   return (
@@ -29,6 +39,16 @@ const Header = () => {
             </Link>
           ))
         }
+        {Object.keys(locales).map((lang) => (
+          <button
+            type="button"
+            value={ locales[lang] }
+            key={ lang }
+            onClick={ () => setLanguage(locales[lang]) }
+          >
+            <FormattedMessage id={ `langs.${lang}` } />
+          </button>
+        ))}
       </header>
     </>
   );

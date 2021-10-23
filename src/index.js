@@ -10,13 +10,13 @@ import IntlProvider from './locales/provider';
 const locale = navigator ? navigator.language.split(/-|_/)[0] : 'en';
 
 ReactDOM.render(
-  <IntlProvider locale={ locale }>
-    <Provider>
+  <Provider>
+    <IntlProvider locale={ locale }>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Provider>
-  </IntlProvider>,
+    </IntlProvider>
+  </Provider>,
   document.getElementById('root'),
 );
 
