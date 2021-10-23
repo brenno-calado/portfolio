@@ -11,7 +11,13 @@ const Projects = () => {
       <ul className="project-list">
         {
           projects.map((project, index) => (
-            <li key={ index } className={ projectItem }>
+            <li
+              key={ index }
+              className={ projectItem }
+              onClick={ () => window.open(project.link) }
+              onKeyPress={ (evt) => evt.key === 'Enter' && window.open(project.link) }
+              role="menuitem"
+            >
               <img src={ project.src } alt={ project.title } width="100%" />
               <a
                 target="_blank"
