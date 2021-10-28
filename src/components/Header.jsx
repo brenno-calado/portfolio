@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
+import Context from '../context/MyContext';
+import LOCALES from '../locales/locales';
 
 const Header = () => {
+  const { state } = useContext(Context);
   const [showHeader, setHeader] = useState(false);
   const menu = {
     Home: '/portfolio',
@@ -29,6 +32,15 @@ const Header = () => {
             </Link>
           ))
         }
+        <button type="button" disabled={ state.locale === LOCALES.english }>
+          <FormattedMessage id="langs.english" />
+        </button>
+        <button type="button" disabled={ state.locale === LOCALES.portuguese }>
+          <FormattedMessage id="langs.portuguese" />
+        </button>
+        <button type="button" disabled={ state.locale === LOCALES.spanish }>
+          <FormattedMessage id="langs.spanish" />
+        </button>
       </header>
     </>
   );
