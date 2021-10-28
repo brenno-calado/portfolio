@@ -4,19 +4,19 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Provider from './context/Provider';
+import AppProvider from './context/Provider';
 import IntlProvider from './locales/provider';
 
-const locale = navigator ? navigator.language.split(/-|_/)[0] : 'en';
+const navigatorLocale = navigator ? navigator.language.split(/-|_/)[0] : 'en';
 
 ReactDOM.render(
-  <Provider>
-    <IntlProvider locale={ locale }>
+  <AppProvider locale={ navigatorLocale }>
+    <IntlProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </IntlProvider>
-  </Provider>,
+  </AppProvider>,
   document.getElementById('root'),
 );
 
