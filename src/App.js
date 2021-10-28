@@ -18,16 +18,16 @@ function App() {
     >
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Redirect to="/portfolio" />
+        <Route path="/portfolio">
+          <Redirect to="/" />
         </Route>
+        <Route exact path="/" component={ Home } />
         <Route
-          path="/portfolio/blog/most-distant-places"
+          path="/blog/most-distant-places"
           component={ MostDistantPlaces }
         />
-        <Route path="/portfolio/blog" component={ Blog } />
-        <Route path="/portfolio/projects" component={ Projects } />
-        <Route exact path="/portfolio" component={ Home } />
+        <Route path="/blog" component={ Blog } />
+        <Route path="/projects" component={ Projects } />
       </Switch>
       <Footer />
     </main>
