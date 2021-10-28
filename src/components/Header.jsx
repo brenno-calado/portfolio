@@ -42,7 +42,7 @@ const Header = () => {
           className="App-header-link"
           onClick={ () => setLangs(!langs) }
         >
-          Language
+          <FormattedMessage id="language" />
         </button>
       </header>
       { langs ? <LanguageModal setLangs={ setLangs } /> : null}

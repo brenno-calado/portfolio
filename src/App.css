@@ -26,9 +26,14 @@ img {
 .App-header-link {
   background-color: inherit;
   border-bottom: 1px solid silver;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: coral;
+  cursor: pointer;
   font-size: 22px;
-  height: 40px;
-  padding-top: 50px;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   text-align: center;
   width: 100%;
 }
