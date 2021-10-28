@@ -1,12 +1,12 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
-import Context from '../context/MyContext';
-import LOCALES from '../locales/locales';
+
+import LanguageModal from './LanguageModal';
 
 const Header = () => {
-  const { state } = useContext(Context);
   const [showHeader, setHeader] = useState(false);
+  const [langs, setLangs] = useState(false);
   const menu = {
     Home: '/portfolio',
     Blog: '/portfolio/blog',
@@ -27,21 +27,25 @@ const Header = () => {
       <header className={ `App-header ${!showHeader && 'hide-header'}` }>
         {
           Object.keys(menu).map((link) => (
-            <Link to={ menu[link] } key={ link } onClick={ () => setHeader(!showHeader) }>
+            <Link
+              className="App-header-link"
+              to={ menu[link] }
+              key={ link }
+              onClick={ () => setHeader(!showHeader) }
+            >
               <FormattedMessage id={ link } />
             </Link>
           ))
         }
-        <button type="button" disabled={ state.locale === LOCALES.english }>
-          <FormattedMessage id="langs.english" />
-        </button>
-        <button type="button" disabled={ state.locale === LOCALES.portuguese }>
-          <FormattedMessage id="langs.portuguese" />
-        </button>
-        <button type="button" disabled={ state.locale === LOCALES.spanish }>
-          <FormattedMessage id="langs.spanish" />
+        <button
+          type="button"
+          className="App-header-link"
+          onClick={ () => setLangs(!langs) }
+        >
+          Language
         </button>
       </header>
+      { langs ? <LanguageModal setLangs={ setLangs } /> : null}
     </>
   );
 };

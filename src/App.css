@@ -23,7 +23,7 @@ img {
   z-index: 2;
 }
 
-.App-header a {
+.App-header-link {
   background-color: inherit;
   border-bottom: 1px solid silver;
   font-size: 22px;
@@ -33,7 +33,7 @@ img {
   width: 100%;
 }
 
-.App-header a:hover {
+.App-header-link:hover {
   box-shadow: inset 0 -10px coral;
 }
 
@@ -182,6 +182,51 @@ img {
 .with-header {
   background-image: url('./assets/hide_menu.svg');
   right: 40%;
+}
+
+.back-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vh;
+  margin: auto;
+  padding: 4rem;
+  position: relative;
+  top: 4rem;
+  width: 50%;
+  z-index: 4;
+}
+
+.lang-button {
+  background-color: #f2fff2;
+  border: none;
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 14pt;
+  font-weight: bold;
+  color: coral;
+}
+
+.lang-button:hover {
+  opacity: 70%;
+}
+
+.lang-button:disabled {
+  cursor: default;
+  background-color: white;
+  opacity: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
