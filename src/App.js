@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Blog from './pages/Blog';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -18,16 +18,13 @@ function App() {
     >
       <Header />
       <Switch>
-        <Route path="/portfolio">
-          <Redirect to="/" />
-        </Route>
-        <Route exact path="/" component={ Home } />
+        <Route path="/portfolio" component={ Home } />
         <Route
-          path="/blog/most-distant-places"
+          path="/portfolio/blog/most-distant-places"
           component={ MostDistantPlaces }
         />
-        <Route path="/blog" component={ Blog } />
-        <Route path="/projects" component={ Projects } />
+        <Route path="/portfolio/blog" component={ Blog } />
+        <Route path="/portfolio/projects" component={ Projects } />
       </Switch>
       <Footer />
     </main>
