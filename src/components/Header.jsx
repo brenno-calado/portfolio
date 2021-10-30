@@ -9,8 +9,8 @@ const Header = () => {
   const [langs, setLangs] = useState(false);
   const menu = {
     Home: '/',
-    Blog: '/blog',
-    Projects: '/projects',
+    Blog: '#blog',
+    Projects: '#projects',
   };
 
   return (
