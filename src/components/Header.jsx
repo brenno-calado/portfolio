@@ -5,33 +5,22 @@ import { Link } from 'react-router-dom';
 import LanguageModal from './LanguageModal';
 
 const Header = () => {
-  const [showHeader, setHeader] = useState(false);
   const [langs, setLangs] = useState(false);
   const menu = {
-    Home: '/',
+    Home: '/portfolio',
     Blog: '#blog',
     Projects: '#projects',
   };
 
   return (
     <>
-      <button
-        type="button"
-        className={
-          `app-button header-button
-          ${showHeader && 'with-header'}`
-        }
-        onClick={ () => setHeader(!showHeader) }
-        aria-label="menu button"
-      />
-      <header className={ `App-header ${!showHeader && 'hide-header'}` }>
+      <header className="App-header">
         {
           Object.keys(menu).map((link) => (
             <Link
               className="App-header-link"
               to={ menu[link] }
               key={ link }
-              onClick={ () => setHeader(!showHeader) }
             >
               <FormattedMessage id={ link } />
             </Link>
