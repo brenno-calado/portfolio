@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
+import Context from '../context/MyContext';
 
 import LanguageModal from './LanguageModal';
 
 const Header = () => {
   const [langs, setLangs] = useState(false);
+  const { state } = useContext(Context);
   const menu = {
     Home: '/portfolio',
     Blog: '#blog',
@@ -31,7 +33,7 @@ const Header = () => {
           className="App-header-link"
           onClick={ () => setLangs(!langs) }
         >
-          <FormattedMessage id="language" />
+          { state.locale.toUpperCase() }
         </button>
       </header>
       { langs ? <LanguageModal setLangs={ setLangs } /> : null}
