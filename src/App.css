@@ -44,17 +44,6 @@ img {
   width: 50px;
 }
 
-.article * {
-  margin: 1em auto;
-  max-width: 800px;
-  padding: 4px 0;
-}
-
-.article p {
-  text-align: justify;
-  padding: 0 25px;
-}
-
 .dark-mode-button {
   bottom: 100px;
 }
@@ -69,28 +58,32 @@ img {
   right: -50%;
 }
 
-.home, .article {
+.home {
   box-sizing: border-box;
   height: 100%;
-  padding: 0 5px;
   overflow-y: auto;
   width: 100%;
 }
 
 .profile {
-  background-repeat: no-repeat;
-  background-position: center center;
   display: inline-block;
-  background-image: url('./assets/perfil_insta.jpg');
   border: 5px solid #4F778D;
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  animation: flip-out 0.5s alternate ease-in-out;
+  width: 25%;
+  animation: flip-out 0.5s backwards ease-in-out;
 }
 
 .profile:hover {
-  animation: flip-in 0.5s alternate ease-in-out forwards;
+  animation: flip-in 0.5s ease-in-out forwards;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1em;
+  overflow-y: auto;
+  width: 50%;
 }
 
 .project-list {
@@ -135,43 +128,15 @@ img {
 }
 
 .resumee {
-  margin: 2em auto;
-  max-width: 500px;
-  padding: 0 30px;
-  text-align: justify;
-}
-
-.skills {
+  align-items: center;
+  background-image: url('./assets/bubble.svg');
+  background-position: left;
+  background-repeat: no-repeat;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1em auto;
-  max-width: 500px;
-}
-
-.skills li {
-  border: 4px solid coral;
-  border-radius: 50%;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  height: 80px;
-  line-height: 4em;
-  margin: 1em 40px;
-  width: 80px;
-}
-
-.skills li:hover {
-  border: 40px solid coral;
-  box-sizing: border-box;
-  color: antiquewhite;
-  margin: 1em 40px;
-  line-height: 0px;
-}
-
-.skills li:hover span {
-  position: relative;
-  left: -30px;
+  justify-content: flex-start;
+  margin: 2em 0;
+  text-align: center;
+  width: 100%;
 }
 
 .with-header {

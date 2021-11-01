@@ -1,27 +1,36 @@
+/* eslint-disable react/jsx-max-depth */
 import React, { useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
 import MyContext from '../context/MyContext';
 import { projects } from '../utils/variables.json';
+import Perfil from '../assets/perfil_insta.jpg';
 
 const Home = () => {
   const { skills, darkMode } = useContext(MyContext);
   const projectItem = `${darkMode ? 'dark-card' : 'light-card'} project-item`;
+  const width = window.innerWidth;
 
   return (
     <article
       className="home"
     >
-      <h1>Brenno Calado Vieira de Melo Nascimento</h1>
-      <div
-        className="profile"
-        alt="brenno calado's profile"
-      />
-      <section className="resumee">
-        <p>
-          <FormattedMessage
-            id="welcome"
-          />
-        </p>
+      <section
+        className="resumee"
+        style={ { height: width / 2 } }
+      >
+        <img
+          className="profile"
+          src={ Perfil }
+          alt="brenno calado's profile"
+        />
+        <section className="description" style={ { height: width / 2 / 2 } }>
+          <h1>Brenno Calado Vieira de Melo Nascimento</h1>
+          <p>
+            <FormattedMessage
+              id="welcome"
+            />
+          </p>
+        </section>
       </section>
       <h2>Skills</h2>
       <section className="skills">
