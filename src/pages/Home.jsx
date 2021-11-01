@@ -9,6 +9,7 @@ const Home = () => {
   const { skills, darkMode } = useContext(MyContext);
   const projectItem = `${darkMode ? 'dark-card' : 'light-card'} project-item`;
   const width = window.innerWidth;
+  const THREE = 4;
 
   return (
     <article
@@ -23,13 +24,13 @@ const Home = () => {
           src={ Perfil }
           alt="brenno calado's profile"
         />
-        <section className="description" style={ { height: width / 2 / 2 } }>
+        <section className="description black" style={ { height: width / THREE } }>
           <h1>Brenno Calado Vieira de Melo Nascimento</h1>
-          <p>
+          <span>
             <FormattedMessage
               id="welcome"
             />
-          </p>
+          </span>
         </section>
       </section>
       <h2>Skills</h2>

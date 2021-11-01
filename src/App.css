@@ -44,6 +44,10 @@ img {
   width: 50px;
 }
 
+.black {
+  color: black;
+}
+
 .dark-mode-button {
   bottom: 100px;
 }
@@ -80,6 +84,7 @@ img {
 .description {
   display: flex;
   flex-direction: column;
+  font-size: 2.2vw;
   justify-content: flex-start;
   padding: 0 1em;
   overflow-y: auto;
@@ -133,8 +138,8 @@ img {
   background-position: left;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: flex-start;
   margin: 2em 0;
+  padding: 0 0 0 1em;
   text-align: center;
   width: 100%;
 }

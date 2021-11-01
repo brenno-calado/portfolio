@@ -1,6 +1,6 @@
 {
   "es": {
-    "welcome" : "¡Hola! Soy un desarrollador fullstack brasileño con mucha curiosidad por el mundo. \nActualmente estudio Ciencias de la Computación y extracción de datos en Trybe. \nAlgunos proyectos en los que trabajé utilizaban el sistema de conferencias web BigBlueButton y la API de ASAAS. \nTambién soy geógrafo ya que los datos de ubicación son una de mis pasiones. \nEn el ámbito de la geografía, realicé la captura y el análisis de datos para una aplicación de autostop \nHice una encuesta para mapear información sobre el mercado inmobiliario en el centro histórico de Recife. \nMi trabajo de fin de curso fue un estudio de caso sobre cómo hacer de Recife una ciudad inteligente. \nSoy director ejecutivo fundador de la empresa junior MapGeo Júnior.",
+    "welcome" : "¡Hola! Soy un desarrollador fullstack brasileño con mucha curiosidad por el mundo. \nActualmente estudio Ciencias de la Computación y extracción de datos en Trybe. \nAlgunos proyectos en los que trabajé utilizaban el sistema de conferencias web BigBlueButton y la API de ASAAS.",
     "Home": "Página de inicio",
     "Background": "Formación",
     "Skills": "Habilidades",
