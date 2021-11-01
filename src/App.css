@@ -82,7 +82,7 @@ img {
   background-position: center center;
   display: inline-block;
   background-image: url('./assets/perfil_insta.jpg');
-  border: 5px solid coral;
+  border: 5px solid #4F778D;
   border-radius: 50%;
   height: 150px;
   width: 150px;

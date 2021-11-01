@@ -2,8 +2,11 @@
   "pt": {
     "welcome" : "Olá! Eu sou um desenvolvedor fullstack brasileiro com muita curiosidade sobre o mundo.\nAtualmente estudo Ciências da Computação e raspagem de dados na Trybe.\nAlguns projetos que trabalhei utilizavam o sistema de webconferência BigBlueButton e a API da ASAAS.\n Eu também sou geógrafo já que dados de localização é uma de minhas paixões.\nNo âmbito da geografia, eu realizei captura e análise de dados para um aplicativo de caronas\nEu fiz uma pesquisa para mapear informações sobre o mercado imobiliário no centro histórico do Recife.\n Meu TCC foi um estudo de caso em como tornar Recife uma cidade inteligente.\nSou Diretor Executivo fundados da empresa júnior MapGeo Júnior.",
     "Home": "Página inicial",
-    "Blog": "Blog",
+    "Background": "Formação",
+    "Skills": "Habilidades",
+    "Experience": "Experiência",
     "Projects": "Projetos",
+    "Contact": "Contato",
     "language": "Linguagem",
     "langs": {
       "english": "English",

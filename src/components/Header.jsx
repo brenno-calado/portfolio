@@ -10,8 +10,11 @@ const Header = () => {
   const { state } = useContext(Context);
   const menu = {
     Home: '/portfolio',
-    Blog: '#blog',
+    Background: '#background',
+    Skills: '#skills',
+    Experience: '#experience',
     Projects: '#projects',
+    Contact: '#contact',
   };
 
   return (
