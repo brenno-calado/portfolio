@@ -1,24 +1,24 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
-import Context from '../context/MyContext';
 
-import LanguageModal from './LanguageModal';
+import Context from '../context/MyContext';
+import LOCALES from '../locales/locales';
 
 const Header = () => {
-  const [langs, setLangs] = useState(false);
-  const { state } = useContext(Context);
+  const { state, dispatch } = useContext(Context);
+
   const menu = {
     Home: '/portfolio',
-    Background: '/portfolio/#background',
-    Skills: '/portfolio/#skills',
-    Experience: '/portfolio/#experience',
-    Projects: '/portfolio/#projects',
-    Contact: '/portfolio/#contact',
+    Background: '#background',
+    Skills: '#skills',
+    Experience: '#experience',
+    Projects: '#projects',
+    Contact: '#contact',
   };
 
   return (
-    <>
-      <header className="App-header">
+    <header className="App-header">
+      <div>
         {
           Object.keys(menu).map((link) => (
             <a
@@ -30,16 +30,23 @@ const Header = () => {
             </a>
           ))
         }
-        <button
-          type="button"
-          className="App-header-link"
-          onClick={ () => setLangs(!langs) }
-        >
-          { state.locale.toUpperCase() }
-        </button>
-      </header>
-      { langs ? <LanguageModal setLangs={ setLangs } /> : null}
-    </>
+      </div>
+      <div>
+        {
+          Object.values(LOCALES).map((locale) => (
+            <button
+              type="button"
+              className="App-header-link"
+              disabled={ state.locale === locale }
+              onClick={ () => dispatch({ type: 'setLocale', locale }) }
+              key={ locale }
+            >
+              { locale.toUpperCase() }
+            </button>
+          ))
+        }
+      </div>
+    </header>
   );
 };
 

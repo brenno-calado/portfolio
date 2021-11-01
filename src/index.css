@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body, main {
   background-image:linear-gradient(160deg, #000046 0%, #094198 50%, #1cb5e0 100%);
   margin: 0;
@@ -6,7 +10,6 @@ body, main {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: fixed;
   width: 100%;
   color: white;
 }
