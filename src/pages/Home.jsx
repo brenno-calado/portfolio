@@ -33,36 +33,47 @@ const Home = () => {
           </span>
         </section>
       </section>
-      <h2>Skills</h2>
-      <section className="skills">
+      <section id="background">
+        <h2><FormattedMessage id="Background" /></h2>
+      </section>
+      <section id="skills" className="skills">
+        <h2><FormattedMessage id="Skills" /></h2>
         { skills.map((skill) => <li key={ skill }><span>{ skill }</span></li>) }
       </section>
-      <h2>Projects</h2>
-      <ul className="project-list">
-        {
-          projects.map((project, index) => (
-            <li
-              key={ index }
-              className={ projectItem }
-              onClick={ () => window.open(project.link) }
-              onKeyPress={ (evt) => evt.key === 'Enter' && window.open(project.link) }
-              role="menuitem"
-            >
-              <img src={ project.src } alt={ project.title } width="100%" />
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={ project.link }
+      <section id="experience">
+        <h2><FormattedMessage id="Experience" /></h2>
+      </section>
+      <section id="projects">
+        <h2><FormattedMessage id="Projects" /></h2>
+        <ul className="project-list">
+          {
+            projects.map((project, index) => (
+              <li
+                key={ index }
+                className={ projectItem }
+                onClick={ () => window.open(project.link) }
+                onKeyPress={ (evt) => evt.key === 'Enter' && window.open(project.link) }
+                role="menuitem"
               >
-                {project.title}
-              </a>
-              <p>
-                {project.description}
-              </p>
-            </li>
-          ))
-        }
-      </ul>
+                <img src={ project.src } alt={ project.title } width="100%" />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={ project.link }
+                >
+                  {project.title}
+                </a>
+                <p>
+                  {project.description}
+                </p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+      <section id="contact">
+        <h2><FormattedMessage id="Contact" /></h2>
+      </section>
     </article>
   );
 };

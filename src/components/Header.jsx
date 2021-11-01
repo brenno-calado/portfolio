@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Link } from 'react-router-dom';
 import Context from '../context/MyContext';
 
 import LanguageModal from './LanguageModal';
@@ -10,11 +9,11 @@ const Header = () => {
   const { state } = useContext(Context);
   const menu = {
     Home: '/portfolio',
-    Background: '#background',
-    Skills: '#skills',
-    Experience: '#experience',
-    Projects: '#projects',
-    Contact: '#contact',
+    Background: '/portfolio/#background',
+    Skills: '/portfolio/#skills',
+    Experience: '/portfolio/#experience',
+    Projects: '/portfolio/#projects',
+    Contact: '/portfolio/#contact',
   };
 
   return (
@@ -22,13 +21,13 @@ const Header = () => {
       <header className="App-header">
         {
           Object.keys(menu).map((link) => (
-            <Link
+            <a
               className="App-header-link"
-              to={ menu[link] }
+              href={ menu[link] }
               key={ link }
             >
               <FormattedMessage id={ link } />
-            </Link>
+            </a>
           ))
         }
         <button
