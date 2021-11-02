@@ -41,34 +41,24 @@ img {
   cursor: default ;
 }
 
-.app-button {
-  background-color: rgba(245, 245, 245, 0.616);
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 50px;
-  position: absolute;
-  right: 20px;
-  width: 50px;
+.background {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.background-card {
+  width: "40%"
 }
 
 .black {
   color: black;
 }
 
-.dark-mode-button {
-  bottom: 100px;
-}
-
 .header-button {
   background-image: url('./assets/menu.svg');
   bottom: 200px;
   z-index: 2;
-}
-
-.hide-header {
-  right: -50%;
 }
 
 .home {
@@ -79,7 +69,7 @@ img {
 
 .profile {
   display: inline-block;
-  border: 5px solid #4F778D;
+  border: 5px solid #0E61AB;
   border-radius: 50%;
   width: 25%;
   animation: flip-out 0.5s backwards ease-in-out;
@@ -133,10 +123,6 @@ img {
   padding: 0 1em;
 }
 
-.ranking-img {
-  width: 100%;
-}
-
 .resumee {
   align-items: center;
   background-image: url('./assets/bubble.svg');
@@ -149,57 +135,17 @@ img {
   width: 100%;
 }
 
-.with-header {
-  background-image: url('./assets/hide_menu.svg');
-  right: 40%;
+.subtitle {
+  font-size: larger;
+  color: lightgray;
 }
 
-.back-shadow {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-}
-
-.modal {
-  background-color: white;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 50vh;
-  margin: auto;
-  padding: 4rem;
-  position: relative;
-  top: 4rem;
-  width: 50%;
-  z-index: 4;
-}
-
-.lang-button {
-  background-color: #f2fff2;
-  border: none;
-  cursor: pointer;
-  padding: 2rem;
-  font-size: 14pt;
-  font-weight: bold;
-}
-
-.lang-button:hover {
-  opacity: 70%;
-}
-
-.lang-button:disabled {
-  cursor: default;
-  background-color: white;
-  opacity: 50%;
+.section {
+  padding-top: 8rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  p, .skills li, img, a, button {
+  a, button {
     transition: color 0.5s ease-in-out;
   }
 }

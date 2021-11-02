@@ -3,7 +3,9 @@ import React, { useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
 import MyContext from '../context/MyContext';
 import { projects } from '../utils/variables.json';
-import Perfil from '../assets/perfil_insta.jpg';
+import Perfil from '../assets/brennocvmn.jpeg';
+import globe from '../assets/globe.svg';
+import dev from '../assets/dev.svg';
 
 const Home = () => {
   const { skills, darkMode } = useContext(MyContext);
@@ -33,17 +35,29 @@ const Home = () => {
           </span>
         </section>
       </section>
-      <section id="background">
+      <section id="background" className="section">
         <h2><FormattedMessage id="Background" /></h2>
+        <div className="background">
+          <div className="background-card">
+            <img src={ globe } alt="menino colocando um pin no globo" />
+            <h2>Geógrafo</h2>
+            <span className="subtitle">UFPE - 2020</span>
+          </div>
+          <div className="background-card">
+            <img src={ dev } alt="rapaz sentado com um notebook no colo" />
+            <h2>Desenvolvedor Fullstack</h2>
+            <span className="subtitle">Trybe - 2021</span>
+          </div>
+        </div>
       </section>
-      <section id="skills" className="skills">
+      <section id="skills" className="section">
         <h2><FormattedMessage id="Skills" /></h2>
         { skills.map((skill) => <li key={ skill }><span>{ skill }</span></li>) }
       </section>
-      <section id="experience">
+      <section id="experience" className="section">
         <h2><FormattedMessage id="Experience" /></h2>
       </section>
-      <section id="projects">
+      <section id="projects" className="section">
         <h2><FormattedMessage id="Projects" /></h2>
         <ul className="project-list">
           {
@@ -71,7 +85,7 @@ const Home = () => {
           }
         </ul>
       </section>
-      <section id="contact">
+      <section id="contact" className="section">
         <h2><FormattedMessage id="Contact" /></h2>
       </section>
     </article>
