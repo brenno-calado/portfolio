@@ -178,6 +178,7 @@ img {
 
 @media (min-width: 768px), (orientation: landscape) {
   .project-list {
+    align-items: flex-start;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
