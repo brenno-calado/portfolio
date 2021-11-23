@@ -12,6 +12,19 @@ const Home = () => {
   const projectItem = `${darkMode ? 'dark-card' : 'light-card'} project-item`;
   const width = window.innerWidth;
   const THREE = 4;
+  const skillWidth = 250;
+
+  const renderSkills = () => (
+    skills.map((skill) => (
+      <div key={ skill[0] } className="slide" style={ { width: `${skillWidth}px` } }>
+        <img
+          height="100%"
+          src={ skill[1] }
+          alt={ skill[0] }
+        />
+      </div>
+    ))
+  );
 
   return (
     <article
@@ -52,7 +65,15 @@ const Home = () => {
       </section>
       <section id="skills" className="section">
         <h2><FormattedMessage id="Skills" /></h2>
-        { skills.map((skill) => <li key={ skill }><span>{ skill }</span></li>) }
+        <div className="slider">
+          <div
+            className="slider-track"
+            style={ { width: `calc(${skillWidth}px * ${skills.length} * 2)` } }
+          >
+            {renderSkills()}
+            {renderSkills()}
+          </div>
+        </div>
       </section>
       <section id="experience" className="section">
         <h2><FormattedMessage id="Experience" /></h2>

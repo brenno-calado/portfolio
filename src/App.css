@@ -144,9 +144,34 @@ img {
   padding-top: 8rem;
 }
 
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow-x: auto;
+  position: relative;
+  width: 80%;
+}
+
+.slider-track {
+  display: flex;
+}
+
+.slide {
+  overflow: hidden;
+  height: 100px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a, button {
     transition: color 0.5s ease-in-out;
+  }
+
+  .slider {
+    overflow: hidden;
+  }
+
+  .slider-track {
+    animation: scroll 20s linear infinite;
   }
 }
 
@@ -197,4 +222,10 @@ img {
   100% {
     transform: scale(1);
   }
+}
+
+ /* slide length * number of slides */
+@keyframes scroll {
+  0% { transform: translateX(0) }
+  100% { transform: translateX(calc(-250px * 17))}
 }
