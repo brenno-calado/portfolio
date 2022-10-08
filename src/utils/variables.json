@@ -1,21 +1,22 @@
 {
-  "skills": [["HTML", "/portfolio/skills/html5.png"],
-  ["CSS", "/portfolio/skills/css3.png"],
-  ["JS", "/portfolio/skills/js.png"],
-  ["React", "/portfolio/skills/react.png"],
-  ["Node", "/portfolio/skills/node.png"],
-  ["MySQL", "/portfolio/skills/mysql.png"],
-  ["MongoDB", "/portfolio/skills/mongodb.png"],
-  ["Jest", "/portfolio/skills/jest.svg"],
-  ["Git", "/portfolio/skills/git.png"],
-  ["Bash", "/portfolio/skills/bash.png"],
-  ["QGIS", "/portfolio/skills/qgis.png"],
-  ["Python", "/portfolio/skills/python.png"],
-  ["PyTest", "/portfolio/skills/pytest.svg"],
-  ["Sequelize", "/portfolio/skills/sequelize.png"],
-  ["Mongoose", "/portfolio/skills/mongoose.svg"],
-  ["Heroku", "/portfolio/skills/heroku.svg"],
-  ["Socket.io", "/portfolio/skills/socketio.svg"]
+  "skills": [
+    ["HTML", "/portfolio/skills/html5.png"],
+    ["CSS", "/portfolio/skills/css3.png"],
+    ["JS", "/portfolio/skills/js.png"],
+    ["React", "/portfolio/skills/react.png"],
+    ["Node", "/portfolio/skills/node.png"],
+    ["MySQL", "/portfolio/skills/mysql.png"],
+    ["MongoDB", "/portfolio/skills/mongodb.png"],
+    ["Jest", "/portfolio/skills/jest.svg"],
+    ["Git", "/portfolio/skills/git.png"],
+    ["Bash", "/portfolio/skills/bash.png"],
+    ["QGIS", "/portfolio/skills/qgis.png"],
+    ["Python", "/portfolio/skills/python.png"],
+    ["PyTest", "/portfolio/skills/pytest.svg"],
+    ["Sequelize", "/portfolio/skills/sequelize.png"],
+    ["Mongoose", "/portfolio/skills/mongoose.svg"],
+    ["Heroku", "/portfolio/skills/heroku.svg"],
+    ["Socket.io", "/portfolio/skills/socketio.svg"]
   ],
   "projects": [
     {
@@ -47,6 +48,20 @@
       "title": "BigBlueButton",
       "link": "https://github.com/brenno-calado/bigbluebutton",
       "description": "Customizações da plataforma de video-aulas como ajuste da webcam e tempo de aula decorrido para o professor"
+    }
+  ],
+  "backgrounds": [
+    {
+      "alt": "background.alt1",
+      "title": "background.title1",
+      "subtitle": "background.subtitle1",
+      "img": "/portfolio/globe.svg"
+    },
+    {
+      "alt": "background.alt2",
+      "title": "background.title2",
+      "subtitle": "background.subtitle2",
+      "img": "/portfolio/dev.svg"
     }
   ]
 }
