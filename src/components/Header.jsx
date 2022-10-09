@@ -23,10 +23,10 @@ const Header = () => {
           Object.keys(menu).map((link) => (
             <a
               className="App-header-link"
-              href={ menu[link] }
-              key={ link }
+              href={menu[link]}
+              key={link}
             >
-              <FormattedMessage id={ link } />
+              <FormattedMessage id={link} />
             </a>
           ))
         }
@@ -37,9 +37,9 @@ const Header = () => {
             <button
               type="button"
               className="App-header-link"
-              disabled={ state.locale === locale }
-              onClick={ () => dispatch({ type: 'setLocale', locale }) }
-              key={ locale }
+              disabled={state.locale === locale}
+              onClick={() => dispatch({ type: 'setLocale', locale })}
+              key={locale}
             >
               { locale.toUpperCase() }
             </button>

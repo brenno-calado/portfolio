@@ -10,11 +10,11 @@ function App() {
 
   return (
     <main
-      className={ `${darkMode && 'dark-mode'}` }
+      className={`${darkMode && 'dark-mode'}`}
     >
       <Header />
       <Switch>
-        <Route path="/portfolio" component={ Home } />
+        <Route path="/portfolio" component={Home} />
       </Switch>
     </main>
   );

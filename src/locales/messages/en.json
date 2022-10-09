@@ -12,6 +12,14 @@
       "english": "English",
       "portuguese": "Português",
       "spanish": "Español"
+    },
+    "background": {
+      "alt1": "a boy pins a globe",
+      "title1": "Geographer",
+      "subtitle1": "UFPE - 2020",
+      "alt2": "a man sitting with a notebook on his lap",
+      "title2": "Software Developer",
+      "subtitle2": "Tybe - 2021"
     }
   }
 }

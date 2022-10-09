@@ -9,9 +9,9 @@ const Provider = ({ children }) => {
   const { state } = useContext(Context);
   return (
     <IntlProvider
-      locale={ state.locale }
-      textComponent={ Fragment }
-      messages={ flatten(messages[state.locale]) }
+      locale={state.locale}
+      textComponent={Fragment}
+      messages={flatten(messages[state.locale])}
     >
       {children}
     </IntlProvider>

@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from 'react';
 import PropTypes from 'prop-types';
 import MyContext from './MyContext';
-import { skills } from '../utils/variables.json';
+import { skills, backgrounds } from '../utils/variables.json';
 import LOCALES from '../locales/locales';
 
 function Provider({ children, locale }) {
@@ -10,12 +10,12 @@ function Provider({ children, locale }) {
 
   const reducer = (state, action) => {
     switch (action.type) {
-    case 'reset':
-      return defaultLang;
-    case 'setLocale':
-      return { ...state, locale: action.locale };
-    default:
-      return defaultLang;
+      case 'reset':
+        return defaultLang;
+      case 'setLocale':
+        return { ...state, locale: action.locale };
+      default:
+        return defaultLang;
     }
   };
 
@@ -23,13 +23,14 @@ function Provider({ children, locale }) {
 
   return (
     <MyContext.Provider
-      value={ {
+      value={{
         skills,
+        backgrounds,
         darkMode,
         setDarkMode,
         state,
         dispatch,
-      } }
+      }}
     >
       {children}
     </MyContext.Provider>
