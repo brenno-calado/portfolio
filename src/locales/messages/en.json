@@ -20,6 +20,18 @@
       "alt2": "a man sitting with a notebook on his lap",
       "title2": "Software Developer",
       "subtitle2": "Tybe - 2021"
+    },
+    "projects": {
+      "title1": "Webchat",
+      "description1": "A web chat made with socket.io, a cached database on the server and NoSQL database with MVC architecture",
+      "title2": "Delivery App",
+      "description2": "A Group project made in two weeks at Trybe",
+      "title3": "Cookmaster",
+      "description3": "Project developed at Trybe using JWT for client tokenization and multer to upload files",
+      "title4": "React Inventory",
+      "description4": "A React Tetris-like Inventory",
+      "title5": "Kafka and Discord integration",
+      "description5": "A Kafka publisher and consumer that sends messages to Discord"
     }
   }
 }

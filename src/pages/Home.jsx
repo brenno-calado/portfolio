@@ -85,9 +85,9 @@ const Home = () => {
             >
               <img src={project.src} alt={project.title} width="100%" />
               <a target="_blank" rel="noreferrer" href={project.link}>
-                {project.title}
+                <FormattedMessage id={project.title} />
               </a>
-              <p>{project.description}</p>
+              <p><FormattedMessage id={project.description} /></p>
             </li>
           ))}
         </ul>

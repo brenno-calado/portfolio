@@ -20,34 +20,34 @@
   ],
   "projects": [
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGn_ty7bpsEFdroAjKHR5ZN9h9vGxy4Ks9eQ&usqp=CAU",
-      "title": "Webchat",
+      "src": "https://raw.githubusercontent.com/brenno-calado/sd-09-project-webchat/master/public/images/webchat.gif",
+      "title": "projects.title1",
       "link": "https://github.com/brenno-calado/sd-09-project-webchat",
-      "description": "A web chat made with socket.io, a cached database on the server and NoWebchat utilizando socket.io, banco de dados em cache e banco de dados não relacional com arquitetura MVC"
+      "description": "projects.description1"
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGn_ty7bpsEFdroAjKHR5ZN9h9vGxy4Ks9eQ&usqp=CAU",
-      "title": "Delivery App",
+      "src": "https://raw.githubusercontent.com/brenno-calado/delivery-app-group-13/master/delivery-demo.gif",
+      "title": "projects.title2",
       "link": "https://github.com/brenno-calado/delivery-app-group-13",
-      "description": "A Group project made in two weeks at Trybe"
+      "description": "projects.description2"
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGn_ty7bpsEFdroAjKHR5ZN9h9vGxy4Ks9eQ&usqp=CAU",
-      "title": "Cookmaster",
+      "src": "https://raw.githubusercontent.com/brenno-calado/sd-09-cookmaster-v2/master/cookmaster.gif",
+      "title": "projects.title3",
       "link": "https://github.com/brenno-calado/sd-09-cookmaster-v2",
-      "description": ""
+      "description": "projects.description3"
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGn_ty7bpsEFdroAjKHR5ZN9h9vGxy4Ks9eQ&usqp=CAU",
-      "title": "Integração ASAAS + Memberkit (Proof of Concept)",
-      "link": "https://asaas-webhook.herokuapp.com/view/vista",
-      "description": "Proof of concept de integração do sistema de pagamentos da ASAAS e a plataforma de cursos Memberkit"
+      "src": "https://raw.githubusercontent.com/brenno-calado/inventory/develop/public/demo.gif",
+      "title": "projects.title4",
+      "link": "https://github.com/brenno-calado/inventory",
+      "description": "projects.description4"
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGn_ty7bpsEFdroAjKHR5ZN9h9vGxy4Ks9eQ&usqp=CAU",
-      "title": "BigBlueButton",
-      "link": "https://github.com/brenno-calado/bigbluebutton",
-      "description": "Customizações da plataforma de video-aulas como ajuste da webcam e tempo de aula decorrido para o professor"
+      "src": "https://raw.githubusercontent.com/brenno-calado/kafka-discord/master/demo.gif",
+      "title": "projects.title5",
+      "link": "https://github.com/brenno-calado/kafka-discord",
+      "description": "projects.description5"
     }
   ],
   "backgrounds": [
