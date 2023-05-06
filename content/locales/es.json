@@ -1,11 +1,11 @@
 {
   "welcome": "¡Hola! Soy un desarrollador fullstack brasileño con mucha curiosidad por el mundo. \nActualmente estudio Ciencias de la Computación y extracción de datos en Trybe. \nAlgunos proyectos en los que trabajé utilizaban el sistema de conferencias web BigBlueButton y la API de ASAAS.",
-  "Home": "Página de inicio",
-  "Background": "Formación",
-  "Skills": "Habilidades",
-  "Experience": "Experiencia",
-  "Projects": "Proyectos",
-  "Contact": "Contacto",
+  "home": "Página de inicio",
+  "background-title": "Formación",
+  "skills": "Habilidades",
+  "experience": "Experiencia",
+  "projects-title": "Proyectos",
+  "contact": "Contacto",
   "language": "Idioma",
   "langs": {
     "english": "English",
@@ -13,23 +13,23 @@
     "spanish": "Español"
   },
   "background": {
-    "alt1": "un niño clava un globo terráqueo",
-    "title1": "Geógrafo",
-    "subtitle1": "UFPE - 2020",
-    "alt2": "un hombre sentado con una computadora portátil en su regazo",
-    "title2": "Desarrollador de Software",
-    "subtitle2": "Tybe - 2021"
+    "alt-1": "un niño clava un globo terráqueo",
+    "title-1": "Geógrafo",
+    "subtitle-1": "UFPE - 2020",
+    "alt-2": "un hombre sentado con una computadora portátil en su regazo",
+    "title-2": "Desarrollador de Software",
+    "subtitle-2": "Tybe - 2021"
   },
   "projects": {
-    "title1": "chat web",
-    "description1": "Un chat web realizado con socket.io, una base de datos en caché en el servidor y una base de datos NoSQL con arquitectura MVC",
-    "title2": "Aplicación de entrega",
-    "description2": "Un proyecto de grupo realizado en dos semanas en Trybe",
-    "title3": "maestro de cocina",
-    "description3": "Proyecto desarrollado en Trybe usando JWT para tokenización de clientes y multer para subir archivos",
-    "title4": "Inventario React",
-    "description4": "Un inventario React similar a Tetris",
-    "title5": "Integración de Kafka y Discord",
-    "description5": "Un produtor y consumidor Kafka que envía mensajes a Discord"
+    "title-1": "chat web",
+    "description-1": "Un chat web realizado con socket.io, una base de datos en caché en el servidor y una base de datos NoSQL con arquitectura MVC",
+    "title-2": "Aplicación de entrega",
+    "description-2": "Un proyecto de grupo realizado en dos semanas en Trybe",
+    "title-3": "maestro de cocina",
+    "description-3": "Proyecto desarrollado en Trybe usando JWT para tokenización de clientes y multer para subir archivos",
+    "title-4": "Inventario React",
+    "description-4": "Un inventario React similar a Tetris",
+    "title-5": "Integración de Kafka y Discord",
+    "description-5": "Un produtor y consumidor Kafka que envía mensajes a Discord"
   }
 }
