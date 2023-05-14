@@ -1,5 +1,6 @@
 {
-  "welcome": "Desenvolvedor FullStack e Geógrafo dando o máximo para resolver problemas do mundo atráves de software.\nTenho experiência trabalhando com servidores Node.js, páginas Next.js e banco de dados Postgres e Mongo. Tenho experiência como empreendedor e fundando uma empresa júnior, portanto para mim, a lógica de negócio e o valor do produtos são as partes essenciais de um produto.\n Se você me ver em uma equipe, eu estou na maior parte do tempo mediando conflitos através da razão e tentando o máximo reconciliar ambos os pontos de vista. As pessoas me veem como alguem que sintetiza bem ideias.",
+  "hello": "Oi! Me chamo Brenno Vieira de Melo",
+  "welcome": "Sou desenvolvedor Fullstack e Geógrafo resolvendo problemas do mundo atráves de software.",
   "home": "Página inicial",
   "background-title": "Formação",
   "skills": "Habilidades",
@@ -7,29 +8,7 @@
   "projects-title": "Projetos",
   "contact": "Contato",
   "language": "Linguagem",
-  "langs": {
-    "english": "English",
-    "portuguese": "Português",
-    "spanish": "Español"
-  },
-  "background": {
-    "alt-1": "um menino coloca um pin em um globo",
-    "title-1": "Geógrafo",
-    "subtitle-1": "UFPE - 2020",
-    "alt-2": "um homem sentado com um notebook em seu colo",
-    "title-2": "Desenvolvedor de Software",
-    "subtitle-2": "Tybe - 2021"
-  },
-  "projects": {
-    "title-1": "Webchat",
-    "description-1": "Um web chat feito com socket.io, um banco de dados em cache no servidor e banco de dados NoSQL com arquitetura MVC",
-    "title-2": "Aplicativo de entrega",
-    "description-2": "Um projeto de grupo feito em duas semanas na Trybe",
-    "title-3": "Cozinheiro",
-    "description-3": "Projeto desenvolvido na Trybe utilizando JWT para tokenização de cliente e multer para upload de arquivos",
-    "title-4": "Inventório React",
-    "description-4": "Um inventório React similar ao Tetris",
-    "title-5": "Integração Kafka e Discord",
-    "description-5": "Um produtor e consumidor do Kafka que envia mensagens para o Discord"
-  }
+  "english": "English",
+  "portuguese": "Português",
+  "spanish": "Español"
 }

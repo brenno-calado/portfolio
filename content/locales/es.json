@@ -1,5 +1,6 @@
 {
-  "welcome": "¡Hola! Soy un desarrollador fullstack brasileño con mucha curiosidad por el mundo. \nActualmente estudio Ciencias de la Computación y extracción de datos en Trybe. \nAlgunos proyectos en los que trabajé utilizaban el sistema de conferencias web BigBlueButton y la API de ASAAS.",
+  "hello": "¡Buenas! Soy Brenno Vieira de Melo",
+  "welcome": "Desarrollador Fullstack y Geógrafo resolvendo los problemas del mundo a través del software.",
   "home": "Página de inicio",
   "background-title": "Formación",
   "skills": "Habilidades",
@@ -7,29 +8,7 @@
   "projects-title": "Proyectos",
   "contact": "Contacto",
   "language": "Idioma",
-  "langs": {
-    "english": "English",
-    "portuguese": "Português",
-    "spanish": "Español"
-  },
-  "background": {
-    "alt-1": "un niño clava un globo terráqueo",
-    "title-1": "Geógrafo",
-    "subtitle-1": "UFPE - 2020",
-    "alt-2": "un hombre sentado con una computadora portátil en su regazo",
-    "title-2": "Desarrollador de Software",
-    "subtitle-2": "Tybe - 2021"
-  },
-  "projects": {
-    "title-1": "chat web",
-    "description-1": "Un chat web realizado con socket.io, una base de datos en caché en el servidor y una base de datos NoSQL con arquitectura MVC",
-    "title-2": "Aplicación de entrega",
-    "description-2": "Un proyecto de grupo realizado en dos semanas en Trybe",
-    "title-3": "maestro de cocina",
-    "description-3": "Proyecto desarrollado en Trybe usando JWT para tokenización de clientes y multer para subir archivos",
-    "title-4": "Inventario React",
-    "description-4": "Un inventario React similar a Tetris",
-    "title-5": "Integración de Kafka y Discord",
-    "description-5": "Un produtor y consumidor Kafka que envía mensajes a Discord"
-  }
+  "english": "English",
+  "portuguese": "Português",
+  "spanish": "Español"
 }

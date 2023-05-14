@@ -1,5 +1,6 @@
 {
-  "welcome": "Full Stack Developer and Geographer passionately trying to solve world problems through software development.\nI'm experienced working with Node.js servers, Next.js pages and Postgres and Mongo databases. I have experience being an entrepreneur and founding a junior company, so for me, business logic and product value are the most important aspects of a product.\nIf you see me in a team, I'm most of the time the person mediating the conflict through reasoning and trying my best to reconcile both points of view. People usually see me as someone who synthesizes ideas well.",
+  "hello": "Hi! I'm Brenno Vieira de Melo",
+  "welcome": "Fullstack Developer and Geographer solving world problems through software.",
   "home": "Home",
   "background-title": "Background",
   "skills": "Skills",
@@ -7,29 +8,7 @@
   "projects-title": "Projects",
   "contact": "Contact",
   "language": "Language",
-  "langs": {
-    "english": "English",
-    "portuguese": "Português",
-    "spanish": "Español"
-  },
-  "background": {
-    "alt-1": "a boy pins a globe",
-    "title-1": "Geographer",
-    "subtitle-1": "UFPE - 2020",
-    "alt-2": "a man sitting with a notebook on his lap",
-    "title-2": "Software Developer",
-    "subtitle-2": "Tybe - 2021"
-  },
-  "projects": {
-    "title-1": "Webchat",
-    "description-1": "A web chat made with socket.io, a cached database on the server and NoSQL database with MVC architecture",
-    "title-2": "Delivery App",
-    "description-2": "A Group project made in two weeks at Trybe",
-    "title-3": "Cookmaster",
-    "description-3": "Project developed at Trybe using JWT for client tokenization and multer to upload files",
-    "title-4": "React Inventory",
-    "description-4": "A React Tetris-like Inventory",
-    "title-5": "Kafka and Discord integration",
-    "description-5": "A Kafka publisher and consumer that sends messages to Discord"
-  }
+  "english": "English",
+  "portuguese": "Português",
+  "spanish": "Español"
 }
