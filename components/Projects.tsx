@@ -1,5 +1,6 @@
 import { ImageUrl } from "@/pages/api/demo-image";
 import { PinnedRepos } from "@/pages/api/pinned-repos";
+import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 
 export function Projects({ pinnedRepos, imageUrls}: { pinnedRepos: PinnedRepos[], imageUrls: ImageUrl[] }) {
@@ -9,7 +10,7 @@ export function Projects({ pinnedRepos, imageUrls}: { pinnedRepos: PinnedRepos[]
         <FormattedMessage id="projects-title" />
       </h2>
       <ul>
-        {pinnedRepos.length
+        {pinnedRepos?.length
           ? pinnedRepos.map((repo, index) => (
               <li key={index}>
                 <h2>{repo.name}</h2>
@@ -18,7 +19,7 @@ export function Projects({ pinnedRepos, imageUrls}: { pinnedRepos: PinnedRepos[]
               </li>
             ))
           : null}
-          {imageUrls.length ? imageUrls.map((url, index) => <img key={index} src={url.imageUrl} />) : null
+          {imageUrls?.length ? imageUrls.map((url, index) => <Image alt="" key={index} src={url.imageUrl} />) : null
 
           }
       </ul>

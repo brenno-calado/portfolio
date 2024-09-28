@@ -46,6 +46,10 @@ export async function getServerSideProps({ res }: GetServerSidePropsContext) {
     }
   } catch (error) {
     console.error(error);
+
+    return {
+      props: {}
+    }
   }
 }
 
