@@ -1,9 +1,8 @@
-import { ImageUrl } from "@/pages/api/demo-image";
-import { PinnedRepos } from "@/pages/api/pinned-repos";
+import { ProjectProps } from "@/models/project.model";
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 
-export function Projects({ pinnedRepos, imageUrls}: { pinnedRepos: PinnedRepos[], imageUrls: ImageUrl[] }) {
+export function Projects({ pinnedRepos, imageUrls }: ProjectProps) {
   return (
     <section>
       <h2>
