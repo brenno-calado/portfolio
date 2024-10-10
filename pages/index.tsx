@@ -46,9 +46,6 @@ export default function Home({ imageUrls, pinnedRepos }: IndexProps) {
   return (
     <main className={`${inter.className} p-4 max-w-5xl md:mx-auto`}>
       <Welcome />
-      <Background />
-      <Skills />
-      <Experience />
       <Projects imageUrls={imageUrls} pinnedRepos={pinnedRepos}  />
       <Contact />
     </main>
