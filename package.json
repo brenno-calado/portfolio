@@ -1,75 +1,27 @@
 {
-  "homepage": "https://brenno-calado.github.io/portfolio",
-  "name": "react-portfolio",
-  "version": "0.1.0",
-  "engines": {
-    "npm": "7.x",
-    "node": "14.x"
-  },
+  "name": "portfolio",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.21.1",
-    "clipboard-copy": "^3.1.0",
-    "flat": "^5.0.2",
-    "history": "^4.7.2",
-    "lint": "^0.8.19",
-    "lodash": "^4.17.15",
-    "postcss": "^8.2.15",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-intl": "^5.20.13",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "stylelint": "^13.13.1",
-    "web-vitals": "^1.1.2",
-    "websocket-extensions": ">=0.1.4"
-  },
   "scripts": {
-    "cy": "cypress run",
-    "cy:open": "cypress open",
-    "start": "BROWSER=google-chrome-stable react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test-coverage": "react-scripts test --coverage --watchAll=false",
-    "eject": "react-scripts eject",
-    "lint": "eslint --no-inline-config -c .eslintrc.json . --ext .js,.jsx",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "clipboardy": "^2.1.0",
-    "cypress": "^3.7.0",
-    "cypress-multi-reporters": "^1.4.0",
-    "eslint": "^7.25.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "gh-pages": "^3.1.0",
-    "stylelint": "^13.13.1",
-    "stylelint-order": "^4.1.0"
+  "dependencies": {
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.4",
+    "graphql-request": "^6.0.0",
+    "next": "^14.2.13",
+    "postcss": "^8.4.47",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-intl": "^6.4.2",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
   }
 }
