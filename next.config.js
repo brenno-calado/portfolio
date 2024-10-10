@@ -3,8 +3,17 @@ const nextConfig = {
   reactStrictMode: true,
   i18n: {
     defaultLocale: 'en',
-    locales: ['pt-BR', 'en', 'es'],
-    localeDetection: true
+    locales: ['pt-BR', 'en', 'es']
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        pathname: '/brenno-calado/**',
+        port: ''
+      }
+    ]
   }
 }
 
