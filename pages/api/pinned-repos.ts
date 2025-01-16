@@ -28,6 +28,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
+    console.log(String(process.env.GH_GRAPHQL_ENDPOINT))
     const client = new GraphQLClient(String(process.env.GH_GRAPHQL_ENDPOINT), {
       headers: {
         authorization: `Bearer ${String(process.env.GH_TOKEN)}`,
