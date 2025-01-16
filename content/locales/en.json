@@ -1,6 +1,7 @@
 {
-  "hello": "Hi! I'm Brenno Vieira de Melo",
-  "welcome": "Fullstack Developer and Geographer solving world problems through software.",
+  "hello": "Hi! I'm ",
+  "name": "Brenno Vieira de Melo.",
+  "sub-headline": "Fullstack Developer and Geographer with {years} years of experience.",
   "home": "Home",
   "background-title": "Background",
   "skills": "Skills",

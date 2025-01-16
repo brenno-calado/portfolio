@@ -1,6 +1,7 @@
 {
-  "hello": "¡Buenas! Soy Brenno Vieira de Melo",
-  "welcome": "Desarrollador Fullstack y Geógrafo resolvendo los problemas del mundo a través del software.",
+  "hello": "¡Buenas! Soy ",
+  "name": "Brenno Vieira de Melo.",
+  "sub-headline": "Desarrollador Fullstack y Geógrafo con {years} años de experiencia.",
   "home": "Página de inicio",
   "background-title": "Formación",
   "skills": "Habilidades",
