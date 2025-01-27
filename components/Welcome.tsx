@@ -14,13 +14,13 @@ export function Welcome() {
   return (
     <section className="flex md:justify-between gap-10 md:gap-20 flex-col md:flex-row md:h-screen h-auto items-end p-8">
       <div className="m-auto md:m-0">
-        <h1 className="text-3xl"><FormattedMessage id="hello" /><span className={`${geo.className}`}><FormattedMessage id="name" /></span></h1>
+        <h1 className="text-3xl"><FormattedMessage id="hello" /><span className={`${geo.className} block`}><FormattedMessage id="name" /></span></h1>
         <span>
           <FormattedMessage id="sub-headline" values={{ years: yearsOfExperience }} />
         </span>
       </div>
       <div className="w-auto">
-        <Image className="rounded-full" alt="profile image" src="/profile.jpg" width={800} height={800}/>
+        <Image className="rounded-full" alt="profile image" src="/profile.jpg" width={600} height={600}/>
       </div>
     </section>
   );

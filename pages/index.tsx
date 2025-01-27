@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={`${inter.className} max-w-7xl md:mx-auto`}>
+    <main className={`${inter.className}`}>
       <Welcome />
       <Projects imageUrls={imageUrls ?? []} pinnedRepos={pinnedRepos ?? []}  />
       <Contact />
