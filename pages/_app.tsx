@@ -1,8 +1,9 @@
+import "@/styles/fonts.css";
 import "@/styles/globals.css";
-import { IntlProvider } from "react-intl";
+import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
-import type { AppProps } from "next/app";
+import { IntlProvider } from "react-intl";
 
 import English from "../content/locales/en.json";
 import Spanish from "../content/locales/es.json";
