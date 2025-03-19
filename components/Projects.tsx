@@ -5,6 +5,10 @@ import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 
 export function Projects({ pinnedRepos, imageUrls }: ProjectProps) {
+  if (!pinnedRepos?.length || !imageUrls.length) {
+    return null;
+  }
+
   return (
     <section>
       <h2 className="font-bold text-2xl mt-4 mb-2 mx-8 uppercase">
