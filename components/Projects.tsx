@@ -14,7 +14,7 @@ export function Projects({ pinnedRepos, imageUrls }: ProjectProps) {
       <h2 className="font-bold text-2xl mt-4 mb-2 mx-8 uppercase">
         <FormattedMessage id="projects-title" />
       </h2>
-      <ul className="columns-2 md:columns-3 lg:columns-4 gap-4 pb-8 px-8">
+      <ul className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 pb-8 px-8">
         {pinnedRepos?.length
           ? pinnedRepos.map((repo, index) => (
               <Link
