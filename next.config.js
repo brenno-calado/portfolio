@@ -4,13 +4,13 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'github.com',
-        pathname: '/brenno-calado/**',
-        port: ''
-      }
-    ]
-  }
-}
+        protocol: "https",
+        hostname: "github.com",
+        pathname: "/brenno-calado/**",
+        port: "",
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

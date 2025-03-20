@@ -1,14 +1,21 @@
 import { Contact, Projects, Welcome } from "@/components";
+import { Blog } from "@/components/Blog";
 import Loading from "@/components/shared/Loading";
 import { RepoImage } from "@/models/project.model";
 import { PinnedRepos } from "@/pages/api/pinned-repos";
+import type { PostData } from "@/types/post";
+import { getSortedPostsData } from "@/utils/posts";
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+interface HomeProps {
+  allPostsData: PostData[];
+}
+
+export default function Home({ allPostsData }: HomeProps) {
   const [imageUrls, setImageUrls] = useState<RepoImage[]>();
   const [pinnedRepos, setPinnedRepos] = useState<PinnedRepos[]>();
   const [loadingPinnedRepos, setLoadingPinnedRepos] = useState<boolean>(true);
@@ -50,8 +57,18 @@ export default function Home() {
     <main className={`${inter.className}`}>
       <Toaster />
       <Welcome />
+      <Blog allPostsData={allPostsData} />
       {renderProjects()}
       <Contact />
     </main>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }
