@@ -2,8 +2,11 @@ import { PostData } from "@/types/post";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { remark } from "remark";
-import html from "remark-html";
+import remarkStringify from "rehype-stringify";
+import remarkBreaks from "remark-breaks";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
@@ -59,7 +62,12 @@ export async function getPostData(id: string) {
   const matterResult = matter(fileContents);
 
   // Use remark to convert markdown into HTML string
-  const processedContent = await remark().use(html).process(matterResult.content);
+  const processedContent = await unified()
+    .use(remarkParse)
+    .use(remarkBreaks)
+    .use(remarkRehype)
+    .use(remarkStringify)
+    .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml

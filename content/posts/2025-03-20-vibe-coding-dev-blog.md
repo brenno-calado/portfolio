@@ -6,6 +6,7 @@ lastEditBy: "Brenno Nascimento"
 description: "How I set up this portfolio blog using Next.js, and GitHub by 'vibe coding'"
 ---
 
+
 # Creating a Dev Blog with AI
 
 This is the first post for this blog! ✨
