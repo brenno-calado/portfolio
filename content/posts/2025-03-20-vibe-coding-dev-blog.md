@@ -6,14 +6,15 @@ lastEditBy: "Brenno Nascimento"
 description: "How I set up this portfolio blog using Next.js, and GitHub by 'vibe coding'"
 ---
 
-# Creating a Dev Blog with AI
+## Creating a Dev Blog with AI
 
 This is the first post for this blog! ✨
-I wanted a simple way to share my thoughts in an *enjoyable* way. 💁🏼‍♂
+I wanted a simple way to share my thoughts in an _enjoyable_ way. 💁🏼‍♂
 
-## The Blog Setup
+### The Blog Setup
 
 This blog is built with:
+
 - **Next.js** ⚛️
 - **Markdown**📝
 - **GitHub**🐙
@@ -33,7 +34,7 @@ The best part is that I can write and publish new posts directly from my phone. 
 
 Within 5 minutes or less, Vercel rebuilds the site and a new post is up and running.✨
 
-## Why This Approach?
+### Why This Approach?
 
 As developers, we often over-engineer our personal projects. But sometimes, simpler is better. In this case:
 
@@ -43,16 +44,17 @@ As developers, we often over-engineer our personal projects. But sometimes, simp
 - **Deploy from anywhere**🚀
 - **Fast page loads because of static generation**⚡
 
-## Static generation
+### Static generation
 
 Behind the scenes, Next.js uses static site generation with `getStaticProps` and `getStaticPaths` to build pages at compile time rather than on each request.
 The Markdown files are parsed using libraries like `gray-matter` and `remark`.
 
 This approach gives the simplicity of static files with the component-based architecture of React.
 
-## Next Features
+### Next Features
 
 I plan to enhance this setup over time with:
+
 - Code syntax highlighting
 - Make the Blog component aggregate posts by year, month and date
 - Tag categorization

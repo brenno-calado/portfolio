@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '@/styles/fonts.css';
+@import "@/styles/fonts.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +17,12 @@
   }
 }
 
-pre, code {
-  font-family: 'Hack Nerd Font', monospace;
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-end-rgb));
+}
+
+pre,
+code {
+  font-family: "Hack Nerd Font", monospace;
 }
