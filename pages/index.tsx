@@ -5,6 +5,7 @@ import { RepoImage } from "@/models/project.model";
 import { PinnedRepos } from "@/pages/api/pinned-repos";
 import type { PostData } from "@/types/post";
 import { getSortedPostsData } from "@/utils/posts";
+import { timeToGradient } from "@/utils/sky";
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -54,7 +55,7 @@ export default function Home({ allPostsData }: HomeProps) {
   };
 
   return (
-    <main className={`${inter.className}`}>
+    <main className={`${inter.className}`} style={{ backgroundColor: timeToGradient(Date.now()).end }}>
       <Toaster />
       <Welcome />
       <Blog allPostsData={allPostsData} />
