@@ -26,3 +26,11 @@ pre,
 code {
   font-family: "Hack Nerd Font", monospace;
 }
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.7;
+}
