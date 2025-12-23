@@ -1,6 +1,8 @@
 import type { PostData } from "@/types/post";
 import { getAllPostIds, getPostData } from "@/utils/posts";
 import { GetStaticPropsContext } from "next";
+import Head from "next/head";
+import Link from "next/link";
 
 interface PostProps {
   readonly postData: PostData;
@@ -8,9 +10,11 @@ interface PostProps {
 
 export default function Post({ postData }: PostProps) {
   return (
-    <article className="container mx-auto px-4 py-8">
-      <style>
-        {`
+    <>
+      <Head>
+        <title>{postData.title}</title>
+        <style>
+          {`
         h1 {
           font-size: 2.5rem;
           font-weight: bold;
@@ -60,11 +64,17 @@ export default function Post({ postData }: PostProps) {
           color: #d63384;
         }
       `}
-      </style>
-      <h1 className="text-3xl font-bold mb-2">{postData.title}</h1>
-      <time className="text-gray-500 mb-6">{postData.lastEditDate}</time>
-      <section className="prose lg:prose-xl" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </article>
+        </style>
+      </Head>
+      <article className="container mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold mb-2">{postData.title}</h1>
+        <div>
+          <Link href="/">Home</Link>
+        </div>
+        <time className="text-gray-500 mb-6">{postData.lastEditDate}</time>
+        <section className="prose lg:prose-xl" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      </article>
+    </>
   );
 }
 

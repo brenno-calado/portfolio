@@ -1,11 +1,12 @@
 import { Contact, Projects, Welcome } from "@/components";
-import { Blog } from "@/components/Blog";
+import { LastBlogPosts } from "@/components/LastBlogPosts";
 import Loading from "@/components/shared/Loading";
 import { RepoImage } from "@/models/project.model";
 import { PinnedRepos } from "@/pages/api/pinned-repos";
 import type { PostData } from "@/types/post";
 import { getSortedPostsData } from "@/utils/posts";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -15,7 +16,7 @@ interface HomeProps {
   allPostsData: PostData[];
 }
 
-export default function Home({ allPostsData }: HomeProps) {
+export default function Home({ allPostsData }: Readonly<HomeProps>) {
   const [imageUrls, setImageUrls] = useState<RepoImage[]>();
   const [pinnedRepos, setPinnedRepos] = useState<PinnedRepos[]>();
   const [loadingPinnedRepos, setLoadingPinnedRepos] = useState<boolean>(true);
@@ -27,9 +28,9 @@ export default function Home({ allPostsData }: HomeProps) {
         const pinnedRepos = (await res.json()) as { data: PinnedRepos[] };
 
         let imageUrls: RepoImage[] = [];
-        pinnedRepos.data.forEach((repo) => {
+        for (const repo of pinnedRepos.data) {
           imageUrls.push({ url: `${repo.url}/blob/main/demo.gif?raw=true`, repo: repo.name });
-        });
+        }
 
         setImageUrls(imageUrls);
         setPinnedRepos(pinnedRepos.data);
@@ -54,13 +55,18 @@ export default function Home({ allPostsData }: HomeProps) {
   };
 
   return (
-    <main className={`${inter.className}`}>
-      <Toaster />
-      <Welcome />
-      <Blog allPostsData={allPostsData} />
-      {renderProjects()}
-      <Contact />
-    </main>
+    <>
+      <Head>
+        <title>Brenno's Portfolio</title>
+      </Head>
+      <main className={`${inter.className}`}>
+        <Toaster />
+        <Welcome />
+        <LastBlogPosts allPostsData={allPostsData} />
+        {renderProjects()}
+        <Contact />
+      </main>
+    </>
   );
 }
 
