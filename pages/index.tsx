@@ -24,21 +24,30 @@ export default function Home({ allPostsData }: Readonly<HomeProps>) {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/pinned-repos`);
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_HOST}/api/pinned-repos`
+        );
         const pinnedRepos = (await res.json()) as { data: PinnedRepos[] };
 
-        let imageUrls: RepoImage[] = [];
+        const imageUrls: RepoImage[] = [];
         for (const repo of pinnedRepos.data) {
-          imageUrls.push({ url: `${repo.url}/blob/main/demo.gif?raw=true`, repo: repo.name });
+          imageUrls.push({
+            url: `${repo.url}/blob/main/demo.gif?raw=true`,
+            repo: repo.name,
+          });
         }
 
         setImageUrls(imageUrls);
         setPinnedRepos(pinnedRepos.data);
       } catch (err) {
-        toast((err as Error)?.message ?? "An error occurred while fetching pinned repos.", {
-          icon: "❌",
-          removeDelay: 2000,
-        });
+        toast(
+          (err as Error)?.message ??
+            "An error occurred while fetching pinned repos.",
+          {
+            icon: "❌",
+            removeDelay: 2000,
+          }
+        );
       }
       setLoadingPinnedRepos(false);
     };
@@ -51,13 +60,15 @@ export default function Home({ allPostsData }: Readonly<HomeProps>) {
       return <Loading />;
     }
 
-    return <Projects imageUrls={imageUrls ?? []} pinnedRepos={pinnedRepos ?? []} />;
+    return (
+      <Projects imageUrls={imageUrls ?? []} pinnedRepos={pinnedRepos ?? []} />
+    );
   };
 
   return (
     <>
       <Head>
-        <title>Brenno's Portfolio</title>
+        <title>Brenno&apos;s Portfolio</title>
       </Head>
       <main className={`${inter.className}`}>
         <Toaster />
