@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "git pull && npm install && npm run build && pm2 restart portfolio"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
