@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/brenno-calado/",
+  basePath: "/brenno-calado",
   reactStrictMode: true,
   images: {
     remotePatterns: [
